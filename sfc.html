@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>Vue SFC</title>
   <style>
   @font-face {
   font-family: octicons-link;
@@ -1239,7 +1239,17 @@ pre[class*="language-"] {
   border-bottom: 2px dotted black;
 }
 </style>
-  <style>.markdown-body{}pre.front-matter{display:none!important;}</style>
+  <style>.markdown-body{}body {counter-reset: h2}
+h2 {counter-reset: h3}
+h3 {counter-reset: h4}
+h4 {counter-reset: h5}
+h5 {counter-reset: h6}
+h2:before {counter-increment: h2; content: counter(h2) ". "}
+h3:before {counter-increment: h3; content: counter(h2) "." counter(h3) ". "}
+h4:before {counter-increment: h4; content: counter(h2) "." counter(h3) "." counter(h4) ". "}
+h5:before {counter-increment: h5; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". "}
+h6:before {counter-increment: h6; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". "}
+h2.nocount:before, h3.nocount:before, h4.nocount:before, h5.nocount:before, h6.nocount:before { content: ""; counter-increment: none }pre.front-matter{display:none!important;}</style>
 </head>
 <body>
   <article class="markdown-body"><h1 class="atx" id="vue-cli">Vue CLI</h1>
@@ -1406,88 +1416,90 @@ Vue<span class="token punctuation">.</span><span class="token function">use</spa
 <ul>
 <li><p><strong>HTML</strong></p>
 <pre><code class="fenced-code-block language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://unpkg.com/vue@3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://unpkg.com/vue-router@4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></code></pre>
-</li>
-</ul>
-<div id="app">
-  <h1>Hello App!</h1>
-  <p>
-    
-    
-    
-    Go to Home
-    Go to About
-  </p>
-  
-  
-  
-</div>
-``` 
-  - ``
-    je to tag ve kterém se zobrazuje obsah podle aktuální URL a promíta se tam komponenta, kterou chceme zobrazit
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://unpkg.com/vue-router@4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>app<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Hello App!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- use the router-link component for navigation. --&gt;</span>
+    <span class="token comment">&lt;!-- specify the link by passing the `to` prop. --&gt;</span>
+    <span class="token comment">&lt;!-- `&lt;router-link&gt;` will render an `&lt;a&gt;` tag with the correct `href` attribute --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>router-link</span> <span class="token attr-name">to</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Go to Home<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>router-link</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>router-link</span> <span class="token attr-name">to</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/about<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Go to About<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>router-link</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token comment">&lt;!-- route outlet --&gt;</span>
+  <span class="token comment">&lt;!-- component matched by the route will render here --&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>router-view</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>router-view</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
 <ul>
+<li><code>&lt;router-view&gt;</code>
+je to tag ve kterém se zobrazuje obsah podle aktuální URL a promíta se tam komponenta, kterou chceme zobrazit</li>
+</ul>
+</li>
 <li><p><code>&lt;router-link&gt;</code>
 je to obyčejný <code>a href</code> odkaz, který po kliknutí změní URL a v <a href="link_generated_on_download"></a>zobrazí definovanou komponentu </p>
 </li>
 <li><p><strong>JS</strong> </p>
-<pre><code class="fenced-code-block language-javascript"><span class="token comment">// 1. Define route components.</span>
-<span class="token comment">// These can be imported from other files</span>
-<span class="token keyword">const</span> Home <span class="token operator">=</span> <span class="token punctuation">{</span> template<span class="token operator">:</span> <span class="token string">'&lt;div&gt;Home&lt;/div&gt;'</span> <span class="token punctuation">}</span>
-<span class="token keyword">const</span> About <span class="token operator">=</span> <span class="token punctuation">{</span> template<span class="token operator">:</span> <span class="token string">'&lt;div&gt;About&lt;/div&gt;'</span> <span class="token punctuation">}</span></code></pre>
 </li>
 </ul>
-<p>// 2. Define some routes
-// Each route should map to a component.
-// We'll talk about nested routes later.
-const routes = [
-  { path: '/', component: Home },
-  { path: '/about', component: About },
-]</p>
-<p>// 3. Create the router instance and pass the <code>routes</code> option
-// You can pass in additional options here, but let's
-// keep it simple for now.
-const router = VueRouter.createRouter({
-  // 4. Provide the history implementation to use. We are using the hash history for simplicity here.
-  history: VueRouter.createWebHashHistory(),
-  routes, // short for <code>routes: routes</code>
-})</p>
-<p>// 5. Create and mount the root instance.
-const app = Vue.createApp({})
-// Make sure to <em>use</em> the router instance to make the
-// whole app router-aware.
-app.use(router)</p>
-<p>app.mount('#app')</p>
-<p>// Now the app has started!</p>
-<pre><code class="fenced-code-block">**Single file component**
+<pre><code class="fenced-code-block language-javascript">  <span class="token comment">// 1. Define route components.</span>
+<span class="token comment">// These can be imported from other files</span>
+<span class="token keyword">const</span> Home <span class="token operator">=</span> <span class="token punctuation">{</span> template<span class="token operator">:</span> <span class="token string">'&lt;div&gt;Home&lt;/div&gt;'</span> <span class="token punctuation">}</span>
+<span class="token keyword">const</span> About <span class="token operator">=</span> <span class="token punctuation">{</span> template<span class="token operator">:</span> <span class="token string">'&lt;div&gt;About&lt;/div&gt;'</span> <span class="token punctuation">}</span>
 
-```javascript
-//../src/router/index.js
-import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
+<span class="token comment">// 2. Define some routes</span>
+<span class="token comment">// Each route should map to a component.</span>
+<span class="token comment">// We'll talk about nested routes later.</span>
+<span class="token keyword">const</span> routes <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span> path<span class="token operator">:</span> <span class="token string">'/'</span><span class="token punctuation">,</span> component<span class="token operator">:</span> Home <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span> path<span class="token operator">:</span> <span class="token string">'/about'</span><span class="token punctuation">,</span> component<span class="token operator">:</span> About <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span>
 
-const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =&gt; import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
-]
+<span class="token comment">// 3. Create the router instance and pass the `routes` option</span>
+<span class="token comment">// You can pass in additional options here, but let's</span>
+<span class="token comment">// keep it simple for now.</span>
+<span class="token keyword">const</span> router <span class="token operator">=</span> VueRouter<span class="token punctuation">.</span><span class="token function">createRouter</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token comment">// 4. Provide the history implementation to use. We are using the hash history for simplicity here.</span>
+  history<span class="token operator">:</span> VueRouter<span class="token punctuation">.</span><span class="token function">createWebHashHistory</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  routes<span class="token punctuation">,</span> <span class="token comment">// short for `routes: routes`</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
 
-const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+<span class="token comment">// 5. Create and mount the root instance.</span>
+<span class="token keyword">const</span> app <span class="token operator">=</span> Vue<span class="token punctuation">.</span><span class="token function">createApp</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token comment">// Make sure to _use_ the router instance to make the</span>
+<span class="token comment">// whole app router-aware.</span>
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>router<span class="token punctuation">)</span>
+
+app<span class="token punctuation">.</span><span class="token function">mount</span><span class="token punctuation">(</span><span class="token string">'#app'</span><span class="token punctuation">)</span>
+
+<span class="token comment">// Now the app has started!</span></code></pre>
+<p><strong>Single file component</strong></p>
+<pre><code class="fenced-code-block language-javascript"><span class="token comment">//../src/router/index.js</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> createRouter<span class="token punctuation">,</span> createWebHistory <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vue-router'</span>
+<span class="token keyword">import</span> Home <span class="token keyword">from</span> <span class="token string">'../views/Home.vue'</span>
+
+<span class="token keyword">const</span> routes <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    path<span class="token operator">:</span> <span class="token string">'/'</span><span class="token punctuation">,</span>
+    name<span class="token operator">:</span> <span class="token string">'Home'</span><span class="token punctuation">,</span>
+    component<span class="token operator">:</span> Home
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    path<span class="token operator">:</span> <span class="token string">'/about'</span><span class="token punctuation">,</span>
+    name<span class="token operator">:</span> <span class="token string">'About'</span><span class="token punctuation">,</span>
+    <span class="token comment">// route level code-splitting</span>
+    <span class="token comment">// this generates a separate chunk (about.[hash].js) for this route</span>
+    <span class="token comment">// which is lazy-loaded when the route is visited.</span>
+    <span class="token function-variable function">component</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token comment">/* webpackChunkName: "about" */</span> <span class="token string">'../views/About.vue'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+
+<span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token function">createRouter</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  history<span class="token operator">:</span> <span class="token function">createWebHistory</span><span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">BASE_URL</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
   routes
-})
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
 
-export default router</code></pre>
+<span class="token keyword">export</span> <span class="token keyword">default</span> router</code></pre>
 <pre><code class="fenced-code-block language-javascript"><span class="token comment">//../src/main.js</span>
 <span class="token keyword">import</span> <span class="token punctuation">{</span> createApp <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vue'</span>
 <span class="token keyword">import</span> App <span class="token keyword">from</span> <span class="token string">'./App.vue'</span>
@@ -1709,52 +1721,51 @@ app<span class="token punctuation">.</span><span class="token function">mount</s
 <li><p>příklad:</p>
 </li>
 <li><p><code>store.js</code></p>
-<pre><code class="fenced-code-block language-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> defineStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'pinia'</span></code></pre>
 </li>
 </ul>
-<p>export const useStore = defineStore(
-        'main', {
-          state: () =&gt; {
-            return {
-              counter:0,
-              name: 'Eduardo',
-              isAdmin: true
-            }
-          },
-          getters: {
-            doubleCount: (state) =&gt; state.counter * 2,
-            doubleCountPlusOne(){
-              return this.doubleCount + 1
-            }
-          }
-        }
-)</p>
-<pre><code class="fenced-code-block">`&lt;komponenta&gt;.vue`
+<pre><code class="fenced-code-block language-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> defineStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'pinia'</span>
 
-```javascript
-&lt;template&gt;
-  &lt;div class="hello"&gt;
-    &lt;p&gt;{{ store.doubleCount }}&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/template&gt;
+<span class="token keyword">export</span> <span class="token keyword">const</span> useStore <span class="token operator">=</span> <span class="token function">defineStore</span><span class="token punctuation">(</span>
+    <span class="token string">'main'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        <span class="token function-variable function">state</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token punctuation">{</span>
+                counter<span class="token operator">:</span><span class="token number">0</span><span class="token punctuation">,</span>
+                name<span class="token operator">:</span> <span class="token string">'Eduardo'</span><span class="token punctuation">,</span>
+                isAdmin<span class="token operator">:</span> <span class="token boolean">true</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        getters<span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token function-variable function">doubleCount</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> state<span class="token punctuation">.</span>counter <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">,</span>
+            <span class="token function">doubleCountPlusOne</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>doubleCount <span class="token operator">+</span> <span class="token number">1</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">)</span></code></pre>
+<p><code>&lt;komponenta&gt;.vue</code></p>
+<pre><code class="fenced-code-block language-javascript"><span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"hello"</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>p<span class="token operator">&gt;</span><span class="token punctuation">{</span><span class="token punctuation">{</span> store<span class="token punctuation">.</span>doubleCount <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span>
 
-&lt;script&gt;
-import {useStore} from '@/stores/store'
+<span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>useStore<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@/stores/store'</span>
 
-export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  },
-  setup() {
-    const store = useStore()
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">'HelloWorld'</span><span class="token punctuation">,</span>
+  props<span class="token operator">:</span> <span class="token punctuation">{</span>
+    msg<span class="token operator">:</span> String
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">useStore</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 
-    return {
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
       store
-    }
-  }
-}
-&lt;/script&gt;</code></pre>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span></code></pre>
 <h3 class="atx" id="actions">Actions</h3>
 <ul>
 <li><p>ekvivalentní k <a href="link_generated_on_download">Methods</a> v komponentě</p>
@@ -1763,57 +1774,57 @@ export default {
 </li>
 <li><p>příklad:
 <code>store.js</code>:</p>
-<pre><code class="fenced-code-block language-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> defineStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'pinia'</span>
-<span class="token keyword">import</span> axios <span class="token keyword">from</span> <span class="token string">"axios"</span><span class="token punctuation">;</span></code></pre>
 </li>
 </ul>
-<p>export const useStore = defineStore(
-        'main', {
-          state: () =&gt; {
-            return {
-              userData: null
-            }
-          },
-          actions: {
-            async getUsers() {
-              try {
-                const response = await axios.get('<a href="https://reqres.in/api/users'">https://reqres.in/api/users'</a>);
-                this.userData = response.data.data;
-              } catch (error) {
-                console.error(error);
-              }
-            }
-          }
-        }
-)</p>
-<pre><code class="fenced-code-block">`&lt;komponenta&gt;.vue` :
-```javascript
-&lt;template&gt;
-  &lt;div class="hello"&gt;
-    &lt;pre&gt;{{ store }}&lt;/pre&gt;
-    &lt;button @click="store.getUsers"&gt;Get users&lt;/button&gt;
-  &lt;/div&gt;
-&lt;/template&gt;
+<pre><code class="fenced-code-block language-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> defineStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'pinia'</span>
+<span class="token keyword">import</span> axios <span class="token keyword">from</span> <span class="token string">"axios"</span><span class="token punctuation">;</span>
 
-&lt;script&gt;
-import {useStore} from '@/stores/store'
+<span class="token keyword">export</span> <span class="token keyword">const</span> useStore <span class="token operator">=</span> <span class="token function">defineStore</span><span class="token punctuation">(</span>
+    <span class="token string">'main'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        <span class="token function-variable function">state</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token punctuation">{</span>
+                userData<span class="token operator">:</span> <span class="token keyword">null</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        actions<span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token keyword">async</span> <span class="token function">getUsers</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">try</span> <span class="token punctuation">{</span>
+                    <span class="token keyword">const</span> response <span class="token operator">=</span> <span class="token keyword">await</span> axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'https://reqres.in/api/users'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token keyword">this</span><span class="token punctuation">.</span>userData <span class="token operator">=</span> response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>data<span class="token punctuation">;</span>
+                <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">)</span></code></pre>
+<p><code>&lt;komponenta&gt;.vue</code> :</p>
+<pre><code class="fenced-code-block language-javascript"><span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"hello"</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>pre<span class="token operator">&gt;</span><span class="token punctuation">{</span><span class="token punctuation">{</span> store <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>pre<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>button @click<span class="token operator">=</span><span class="token string">"store.getUsers"</span><span class="token operator">&gt;</span>Get users<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span>
 
-export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  },
-  setup() {
-    const store = useStore()
+<span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>useStore<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@/stores/store'</span>
 
-    return {
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">'HelloWorld'</span><span class="token punctuation">,</span>
+  props<span class="token operator">:</span> <span class="token punctuation">{</span>
+    msg<span class="token operator">:</span> String
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">useStore</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
       store
-    }
-  },
-  methods: {
-  }
-}
-&lt;/script&gt;</code></pre>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span></code></pre>
 </article>
 </body>
 </html>
