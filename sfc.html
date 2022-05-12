@@ -1108,7 +1108,7 @@ pre[class*="language-"] {
 
   </style>
   <style>
-  
+
   </style>
   <style>
     .markdown-body {
@@ -1250,8 +1250,14 @@ h4:before {counter-increment: h4; content: counter(h2) "." counter(h3) "." count
 h5:before {counter-increment: h5; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". "}
 h6:before {counter-increment: h6; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". "}
 h2.nocount:before, h3.nocount:before, h4.nocount:before, h5.nocount:before, h6.nocount:before { content: ""; counter-increment: none }pre.front-matter{display:none!important;}</style>
+  <link rel="stylesheet" href="w3.css">
 </head>
 <body>
+  <div class="w3-bar w3-cyan w3-text-white">
+    <a href="./index.html" class="w3-bar-item w3-button">Základy Vue</a>
+    <a href="./webpack.html" class="w3-bar-item w3-button">Webpack</a>
+    <a href="./sfc.html" class="w3-bar-item w3-button">Single File Component</a>
+  </div>
   <article class="markdown-body"><h1 class="atx" id="vue-cli">Vue CLI</h1>
 <ul>
 <li><a href="#vue-cli">Vue CLI</a><ul>
@@ -1388,7 +1394,7 @@ Soubor obsahuje tři tagy, které oddělují logiku, styl a HTML:</p>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>app<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-    <span class="token comment">&lt;!--obsah--&gt;</span> 
+    <span class="token comment">&lt;!--obsah--&gt;</span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://unpkg.com/vue@next<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
@@ -1527,7 +1533,7 @@ app<span class="token punctuation">.</span><span class="token function">mount</s
 <h3 class="atx" id="matching-syntax">Matching syntax</h3>
 <p>Většina přístupů si vystačí se statickým routováním <code>/about</code> a s dynamickým, ale Vue Router umí daleko více přístupů. Když použijeme dynamické routování, tak místo výrazu <code>:userId</code> se vnitřně použije <strong>regexp</strong> <code>([^/]+)</code>, což najde alespoň jeden znak, který není lomeno. </p>
 <h3 class="atx" id="custom-regexp">Custom Regexp</h3>
-<p>Může se stát, že na stejné routě budeme chtít rozeznávat dvě věci jako například: <code>/:orderId</code> a <code>/:productName</code>. 
+<p>Může se stát, že na stejné routě budeme chtít rozeznávat dvě věci jako například: <code>/:orderId</code> a <code>/:productName</code>.
 Pro tyto účely můžeme napsat vlastní regexp do závorky takto:</p>
 <pre><code class="fenced-code-block language-javascript"><span class="token keyword">const</span> routes <span class="token operator">=</span> <span class="token punctuation">[</span>
   <span class="token comment">// /:orderId -&gt; matches only numbers</span>
