@@ -1,0 +1,2683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style>
+        @font-face {
+            font-family: octicons-link;
+            src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+        }
+
+        .markdown-body .octicon {
+            display: inline-block;
+            fill: currentColor;
+            vertical-align: text-bottom;
+        }
+
+        .markdown-body .anchor {
+            float: left;
+            line-height: 1;
+            margin-left: -20px;
+            padding-right: 4px;
+        }
+
+        .markdown-body .anchor:focus {
+            outline: none;
+        }
+
+        .markdown-body h1 .octicon-link,
+        .markdown-body h2 .octicon-link,
+        .markdown-body h3 .octicon-link,
+        .markdown-body h4 .octicon-link,
+        .markdown-body h5 .octicon-link,
+        .markdown-body h6 .octicon-link {
+            color: #1b1f23;
+            vertical-align: middle;
+            visibility: hidden;
+        }
+
+        .markdown-body h1:hover .anchor,
+        .markdown-body h2:hover .anchor,
+        .markdown-body h3:hover .anchor,
+        .markdown-body h4:hover .anchor,
+        .markdown-body h5:hover .anchor,
+        .markdown-body h6:hover .anchor {
+            text-decoration: none;
+        }
+
+        .markdown-body h1:hover .anchor .octicon-link,
+        .markdown-body h2:hover .anchor .octicon-link,
+        .markdown-body h3:hover .anchor .octicon-link,
+        .markdown-body h4:hover .anchor .octicon-link,
+        .markdown-body h5:hover .anchor .octicon-link,
+        .markdown-body h6:hover .anchor .octicon-link {
+            visibility: visible;
+        }
+
+        .markdown-body {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            color: #24292e;
+            line-height: 1.5;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+            font-size: 16px;
+            line-height: 1.5;
+            word-wrap: break-word;
+        }
+
+        .markdown-body .pl-c {
+            color: #6a737d;
+        }
+
+        .markdown-body .pl-c1,
+        .markdown-body .pl-s .pl-v {
+            color: #005cc5;
+        }
+
+        .markdown-body .pl-e,
+        .markdown-body .pl-en {
+            color: #6f42c1;
+        }
+
+        .markdown-body .pl-s .pl-s1,
+        .markdown-body .pl-smi {
+            color: #24292e;
+        }
+
+        .markdown-body .pl-ent {
+            color: #22863a;
+        }
+
+        .markdown-body .pl-k {
+            color: #d73a49;
+        }
+
+        .markdown-body .pl-pds,
+        .markdown-body .pl-s,
+        .markdown-body .pl-s .pl-pse .pl-s1,
+        .markdown-body .pl-sr,
+        .markdown-body .pl-sr .pl-cce,
+        .markdown-body .pl-sr .pl-sra,
+        .markdown-body .pl-sr .pl-sre {
+            color: #032f62;
+        }
+
+        .markdown-body .pl-smw,
+        .markdown-body .pl-v {
+            color: #e36209;
+        }
+
+        .markdown-body .pl-bu {
+            color: #b31d28;
+        }
+
+        .markdown-body .pl-ii {
+            background-color: #b31d28;
+            color: #fafbfc;
+        }
+
+        .markdown-body .pl-c2 {
+            background-color: #d73a49;
+            color: #fafbfc;
+        }
+
+        .markdown-body .pl-c2:before {
+            content: "^M";
+        }
+
+        .markdown-body .pl-sr .pl-cce {
+            color: #22863a;
+            font-weight: 700;
+        }
+
+        .markdown-body .pl-ml {
+            color: #735c0f;
+        }
+
+        .markdown-body .pl-mh,
+        .markdown-body .pl-mh .pl-en,
+        .markdown-body .pl-ms {
+            color: #005cc5;
+            font-weight: 700;
+        }
+
+        .markdown-body .pl-mi {
+            color: #24292e;
+            font-style: italic;
+        }
+
+        .markdown-body .pl-mb {
+            color: #24292e;
+            font-weight: 700;
+        }
+
+        .markdown-body .pl-md {
+            background-color: #ffeef0;
+            color: #b31d28;
+        }
+
+        .markdown-body .pl-mi1 {
+            background-color: #f0fff4;
+            color: #22863a;
+        }
+
+        .markdown-body .pl-mc {
+            background-color: #ffebda;
+            color: #e36209;
+        }
+
+        .markdown-body .pl-mi2 {
+            background-color: #005cc5;
+            color: #f6f8fa;
+        }
+
+        .markdown-body .pl-mdr {
+            color: #6f42c1;
+            font-weight: 700;
+        }
+
+        .markdown-body .pl-ba {
+            color: #586069;
+        }
+
+        .markdown-body .pl-sg {
+            color: #959da5;
+        }
+
+        .markdown-body .pl-corl {
+            color: #032f62;
+            text-decoration: underline;
+        }
+
+        .markdown-body details {
+            display: block;
+        }
+
+        .markdown-body summary {
+            display: list-item;
+        }
+
+        .markdown-body a {
+            background-color: transparent;
+        }
+
+        .markdown-body a:active,
+        .markdown-body a:hover {
+            outline-width: 0;
+        }
+
+        .markdown-body strong {
+            font-weight: inherit;
+            font-weight: bolder;
+        }
+
+        .markdown-body h1 {
+            font-size: 2em;
+            margin: .67em 0;
+        }
+
+        .markdown-body img {
+            border-style: none;
+        }
+
+        .markdown-body code,
+        .markdown-body kbd,
+        .markdown-body pre {
+            font-family: monospace, monospace;
+            font-size: 1em;
+        }
+
+        .markdown-body hr {
+            box-sizing: content-box;
+            height: 0;
+            overflow: visible;
+        }
+
+        .markdown-body input {
+            font: inherit;
+            margin: 0;
+        }
+
+        .markdown-body input {
+            overflow: visible;
+        }
+
+        .markdown-body [type=checkbox] {
+            box-sizing: border-box;
+            padding: 0;
+        }
+
+        .markdown-body * {
+            box-sizing: border-box;
+        }
+
+        .markdown-body input {
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+        }
+
+        .markdown-body a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+
+        .markdown-body a:hover {
+            text-decoration: underline;
+        }
+
+        .markdown-body strong {
+            font-weight: 600;
+        }
+
+        .markdown-body hr {
+            background: transparent;
+            border: 0;
+            border-bottom: 1px solid #dfe2e5;
+            height: 0;
+            margin: 15px 0;
+            overflow: hidden;
+        }
+
+        .markdown-body hr:before {
+            content: "";
+            display: table;
+        }
+
+        .markdown-body hr:after {
+            clear: both;
+            content: "";
+            display: table;
+        }
+
+        .markdown-body table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .markdown-body td,
+        .markdown-body th {
+            padding: 0;
+        }
+
+        .markdown-body details summary {
+            cursor: pointer;
+        }
+
+        .markdown-body h1,
+        .markdown-body h2,
+        .markdown-body h3,
+        .markdown-body h4,
+        .markdown-body h5,
+        .markdown-body h6 {
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        .markdown-body h1 {
+            font-size: 32px;
+        }
+
+        .markdown-body h1,
+        .markdown-body h2 {
+            font-weight: 600;
+        }
+
+        .markdown-body h2 {
+            font-size: 24px;
+        }
+
+        .markdown-body h3 {
+            font-size: 20px;
+        }
+
+        .markdown-body h3,
+        .markdown-body h4 {
+            font-weight: 600;
+        }
+
+        .markdown-body h4 {
+            font-size: 16px;
+        }
+
+        .markdown-body h5 {
+            font-size: 14px;
+        }
+
+        .markdown-body h5,
+        .markdown-body h6 {
+            font-weight: 600;
+        }
+
+        .markdown-body h6 {
+            font-size: 12px;
+        }
+
+        .markdown-body p {
+            margin-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .markdown-body blockquote {
+            margin: 0;
+        }
+
+        .markdown-body ol,
+        .markdown-body ul {
+            margin-bottom: 0;
+            margin-top: 0;
+            padding-left: 0;
+        }
+
+        .markdown-body ol ol,
+        .markdown-body ul ol {
+            list-style-type: lower-roman;
+        }
+
+        .markdown-body ol ol ol,
+        .markdown-body ol ul ol,
+        .markdown-body ul ol ol,
+        .markdown-body ul ul ol {
+            list-style-type: lower-alpha;
+        }
+
+        .markdown-body dd {
+            margin-left: 0;
+        }
+
+        .markdown-body code,
+        .markdown-body pre {
+            font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+            font-size: 12px;
+        }
+
+        .markdown-body pre {
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        .markdown-body input::-webkit-inner-spin-button,
+        .markdown-body input::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            appearance: none;
+            margin: 0;
+        }
+
+        .markdown-body .border {
+            border: 1px solid #e1e4e8 !important;
+        }
+
+        .markdown-body .border-0 {
+            border: 0 !important;
+        }
+
+        .markdown-body .border-bottom {
+            border-bottom: 1px solid #e1e4e8 !important;
+        }
+
+        .markdown-body .rounded-1 {
+            border-radius: 3px !important;
+        }
+
+        .markdown-body .bg-white {
+            background-color: #fff !important;
+        }
+
+        .markdown-body .bg-gray-light {
+            background-color: #fafbfc !important;
+        }
+
+        .markdown-body .text-gray-light {
+            color: #6a737d !important;
+        }
+
+        .markdown-body .mb-0 {
+            margin-bottom: 0 !important;
+        }
+
+        .markdown-body .my-2 {
+            margin-bottom: 8px !important;
+            margin-top: 8px !important;
+        }
+
+        .markdown-body .pl-0 {
+            padding-left: 0 !important;
+        }
+
+        .markdown-body .py-0 {
+            padding-bottom: 0 !important;
+            padding-top: 0 !important;
+        }
+
+        .markdown-body .pl-1 {
+            padding-left: 4px !important;
+        }
+
+        .markdown-body .pl-2 {
+            padding-left: 8px !important;
+        }
+
+        .markdown-body .py-2 {
+            padding-bottom: 8px !important;
+            padding-top: 8px !important;
+        }
+
+        .markdown-body .pl-3,
+        .markdown-body .px-3 {
+            padding-left: 16px !important;
+        }
+
+        .markdown-body .px-3 {
+            padding-right: 16px !important;
+        }
+
+        .markdown-body .pl-4 {
+            padding-left: 24px !important;
+        }
+
+        .markdown-body .pl-5 {
+            padding-left: 32px !important;
+        }
+
+        .markdown-body .pl-6 {
+            padding-left: 40px !important;
+        }
+
+        .markdown-body .f6 {
+            font-size: 12px !important;
+        }
+
+        .markdown-body .lh-condensed {
+            line-height: 1.25 !important;
+        }
+
+        .markdown-body .text-bold {
+            font-weight: 600 !important;
+        }
+
+        .markdown-body:before {
+            content: "";
+            display: table;
+        }
+
+        .markdown-body:after {
+            clear: both;
+            content: "";
+            display: table;
+        }
+
+        .markdown-body > :first-child {
+            margin-top: 0 !important;
+        }
+
+        .markdown-body > :last-child {
+            margin-bottom: 0 !important;
+        }
+
+        .markdown-body a:not([href]) {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .markdown-body blockquote,
+        .markdown-body dl,
+        .markdown-body ol,
+        .markdown-body p,
+        .markdown-body pre,
+        .markdown-body table,
+        .markdown-body ul {
+            margin-bottom: 16px;
+            margin-top: 0;
+        }
+
+        .markdown-body hr {
+            background-color: #e1e4e8;
+            border: 0;
+            height: .25em;
+            margin: 24px 0;
+            padding: 0;
+        }
+
+        .markdown-body blockquote {
+            border-left: .25em solid #dfe2e5;
+            color: #6a737d;
+            padding: 0 1em;
+        }
+
+        .markdown-body blockquote > :first-child {
+            margin-top: 0;
+        }
+
+        .markdown-body blockquote > :last-child {
+            margin-bottom: 0;
+        }
+
+        .markdown-body kbd {
+            background-color: #fafbfc;
+            border: 1px solid #c6cbd1;
+            border-bottom-color: #959da5;
+            border-radius: 3px;
+            box-shadow: inset 0 -1px 0 #959da5;
+            color: #444d56;
+            display: inline-block;
+            font-size: 11px;
+            line-height: 10px;
+            padding: 3px 5px;
+            vertical-align: middle;
+        }
+
+        .markdown-body h1,
+        .markdown-body h2,
+        .markdown-body h3,
+        .markdown-body h4,
+        .markdown-body h5,
+        .markdown-body h6 {
+            font-weight: 600;
+            line-height: 1.25;
+            margin-bottom: 16px;
+            margin-top: 24px;
+        }
+
+        .markdown-body h1 {
+            font-size: 2em;
+        }
+
+        .markdown-body h1,
+        .markdown-body h2 {
+            border-bottom: 1px solid #eaecef;
+            padding-bottom: .3em;
+        }
+
+        .markdown-body h2 {
+            font-size: 1.5em;
+        }
+
+        .markdown-body h3 {
+            font-size: 1.25em;
+        }
+
+        .markdown-body h4 {
+            font-size: 1em;
+        }
+
+        .markdown-body h5 {
+            font-size: .875em;
+        }
+
+        .markdown-body h6 {
+            color: #6a737d;
+            font-size: .85em;
+        }
+
+        .markdown-body ol,
+        .markdown-body ul {
+            padding-left: 2em;
+        }
+
+        .markdown-body ol ol,
+        .markdown-body ol ul,
+        .markdown-body ul ol,
+        .markdown-body ul ul {
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        .markdown-body li {
+            word-wrap: break-all;
+        }
+
+        .markdown-body li > p {
+            margin-top: 16px;
+        }
+
+        .markdown-body li + li {
+            margin-top: .25em;
+        }
+
+        .markdown-body dl {
+            padding: 0;
+        }
+
+        .markdown-body dl dt {
+            font-size: 1em;
+            font-style: italic;
+            font-weight: 600;
+            margin-top: 16px;
+            padding: 0;
+        }
+
+        .markdown-body dl dd {
+            margin-bottom: 16px;
+            padding: 0 16px;
+        }
+
+        .markdown-body table {
+            display: block;
+            overflow: auto;
+            width: 100%;
+        }
+
+        .markdown-body table th {
+            font-weight: 600;
+        }
+
+        .markdown-body table td,
+        .markdown-body table th {
+            border: 1px solid #dfe2e5;
+            padding: 6px 13px;
+        }
+
+        .markdown-body table tr {
+            background-color: #fff;
+            border-top: 1px solid #c6cbd1;
+        }
+
+        .markdown-body table tr:nth-child(2n) {
+            background-color: #f6f8fa;
+        }
+
+        .markdown-body img {
+            background-color: #fff;
+            box-sizing: content-box;
+            max-width: 100%;
+        }
+
+        .markdown-body img[align=right] {
+            padding-left: 20px;
+        }
+
+        .markdown-body img[align=left] {
+            padding-right: 20px;
+        }
+
+        .markdown-body code {
+            background-color: rgba(27, 31, 35, .05);
+            border-radius: 3px;
+            font-size: 85%;
+            margin: 0;
+            padding: .2em .4em;
+        }
+
+        .markdown-body pre {
+            word-wrap: normal;
+        }
+
+        .markdown-body pre > code {
+            background: transparent;
+            border: 0;
+            font-size: 100%;
+            margin: 0;
+            padding: 0;
+            white-space: pre;
+            word-break: normal;
+        }
+
+        .markdown-body .highlight {
+            margin-bottom: 16px;
+        }
+
+        .markdown-body .highlight pre {
+            margin-bottom: 0;
+            word-break: normal;
+        }
+
+        .markdown-body .highlight pre,
+        .markdown-body pre {
+            background-color: #f6f8fa;
+            border-radius: 3px;
+            font-size: 85%;
+            line-height: 1.45;
+            overflow: auto;
+            padding: 16px;
+        }
+
+        .markdown-body pre code {
+            background-color: transparent;
+            border: 0;
+            display: inline;
+            line-height: inherit;
+            margin: 0;
+            max-width: auto;
+            overflow: visible;
+            padding: 0;
+            word-wrap: normal;
+        }
+
+        .markdown-body .commit-tease-sha {
+            color: #444d56;
+            display: inline-block;
+            font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+            font-size: 90%;
+        }
+
+        .markdown-body .blob-wrapper {
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+
+        .markdown-body .blob-wrapper-embedded {
+            max-height: 240px;
+            overflow-y: auto;
+        }
+
+        .markdown-body .blob-num {
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -webkit-user-select: none;
+            color: rgba(27, 31, 35, .3);
+            cursor: pointer;
+            font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+            font-size: 12px;
+            line-height: 20px;
+            min-width: 50px;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: right;
+            user-select: none;
+            vertical-align: top;
+            white-space: nowrap;
+            width: 1%;
+        }
+
+        .markdown-body .blob-num:hover {
+            color: rgba(27, 31, 35, .6);
+        }
+
+        .markdown-body .blob-num:before {
+            content: attr(data-line-number);
+        }
+
+        .markdown-body .blob-code {
+            line-height: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            position: relative;
+            vertical-align: top;
+        }
+
+        .markdown-body .blob-code-inner {
+            color: #24292e;
+            font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+            font-size: 12px;
+            overflow: visible;
+            white-space: pre;
+            word-wrap: normal;
+        }
+
+        .markdown-body .pl-token.active,
+        .markdown-body .pl-token:hover {
+            background: #ffea7f;
+            cursor: pointer;
+        }
+
+        .markdown-body kbd {
+            background-color: #fafbfc;
+            border: 1px solid #d1d5da;
+            border-bottom-color: #c6cbd1;
+            border-radius: 3px;
+            box-shadow: inset 0 -1px 0 #c6cbd1;
+            color: #444d56;
+            display: inline-block;
+            font: 11px SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+            line-height: 10px;
+            padding: 3px 5px;
+            vertical-align: middle;
+        }
+
+        .markdown-body :checked + .radio-label {
+            border-color: #0366d6;
+            position: relative;
+            z-index: 1;
+        }
+
+        .markdown-body .tab-size[data-tab-size="1"] {
+            -moz-tab-size: 1;
+            tab-size: 1;
+        }
+
+        .markdown-body .tab-size[data-tab-size="2"] {
+            -moz-tab-size: 2;
+            tab-size: 2;
+        }
+
+        .markdown-body .tab-size[data-tab-size="3"] {
+            -moz-tab-size: 3;
+            tab-size: 3;
+        }
+
+        .markdown-body .tab-size[data-tab-size="4"] {
+            -moz-tab-size: 4;
+            tab-size: 4;
+        }
+
+        .markdown-body .tab-size[data-tab-size="5"] {
+            -moz-tab-size: 5;
+            tab-size: 5;
+        }
+
+        .markdown-body .tab-size[data-tab-size="6"] {
+            -moz-tab-size: 6;
+            tab-size: 6;
+        }
+
+        .markdown-body .tab-size[data-tab-size="7"] {
+            -moz-tab-size: 7;
+            tab-size: 7;
+        }
+
+        .markdown-body .tab-size[data-tab-size="8"] {
+            -moz-tab-size: 8;
+            tab-size: 8;
+        }
+
+        .markdown-body .tab-size[data-tab-size="9"] {
+            -moz-tab-size: 9;
+            tab-size: 9;
+        }
+
+        .markdown-body .tab-size[data-tab-size="10"] {
+            -moz-tab-size: 10;
+            tab-size: 10;
+        }
+
+        .markdown-body .tab-size[data-tab-size="11"] {
+            -moz-tab-size: 11;
+            tab-size: 11;
+        }
+
+        .markdown-body .tab-size[data-tab-size="12"] {
+            -moz-tab-size: 12;
+            tab-size: 12;
+        }
+
+        .markdown-body .task-list-item {
+            list-style-type: none;
+        }
+
+        .markdown-body .task-list-item + .task-list-item {
+            margin-top: 3px;
+        }
+
+        .markdown-body .task-list-item input {
+            margin: 0 .2em .25em -1.6em;
+            vertical-align: middle;
+        }
+
+        .markdown-body hr {
+            border-bottom-color: #eee;
+        }
+
+        .markdown-body .pl-0 {
+            padding-left: 0 !important;
+        }
+
+        .markdown-body .pl-1 {
+            padding-left: 4px !important;
+        }
+
+        .markdown-body .pl-2 {
+            padding-left: 8px !important;
+        }
+
+        .markdown-body .pl-3 {
+            padding-left: 16px !important;
+        }
+
+        .markdown-body .pl-4 {
+            padding-left: 24px !important;
+        }
+
+        .markdown-body .pl-5 {
+            padding-left: 32px !important;
+        }
+
+        .markdown-body .pl-6 {
+            padding-left: 40px !important;
+        }
+
+        .markdown-body .pl-7 {
+            padding-left: 48px !important;
+        }
+
+        .markdown-body .pl-8 {
+            padding-left: 64px !important;
+        }
+
+        .markdown-body .pl-9 {
+            padding-left: 80px !important;
+        }
+
+        .markdown-body .pl-10 {
+            padding-left: 96px !important;
+        }
+
+        .markdown-body .pl-11 {
+            padding-left: 112px !important;
+        }
+
+        .markdown-body .pl-12 {
+            padding-left: 128px !important;
+        }
+
+    </style>
+    <style>
+        /**
+       * prism.js default theme for JavaScript, CSS and HTML
+       * Based on dabblet (http://dabblet.com)
+       * @author Lea Verou
+       */
+
+        code[class*="language-"],
+        pre[class*="language-"] {
+            color: black;
+            background: none;
+            text-shadow: 0 1px white;
+            font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+            font-size: 1em;
+            text-align: left;
+            white-space: pre;
+            word-spacing: normal;
+            word-break: normal;
+            word-wrap: normal;
+            line-height: 1.5;
+
+            -moz-tab-size: 4;
+            -o-tab-size: 4;
+            tab-size: 4;
+
+            -webkit-hyphens: none;
+            -moz-hyphens: none;
+            -ms-hyphens: none;
+            hyphens: none;
+        }
+
+        pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+        code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+            text-shadow: none;
+            background: #b3d4fc;
+        }
+
+        pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+        code[class*="language-"]::selection, code[class*="language-"] ::selection {
+            text-shadow: none;
+            background: #b3d4fc;
+        }
+
+        @media print {
+            code[class*="language-"],
+            pre[class*="language-"] {
+                text-shadow: none;
+            }
+        }
+
+        /* Code blocks */
+        pre[class*="language-"] {
+            padding: 1em;
+            margin: .5em 0;
+            overflow: auto;
+        }
+
+        :not(pre) > code[class*="language-"],
+        pre[class*="language-"] {
+            background: #f5f2f0;
+        }
+
+        /* Inline code */
+        :not(pre) > code[class*="language-"] {
+            padding: .1em;
+            border-radius: .3em;
+            white-space: normal;
+        }
+
+        .token.comment,
+        .token.prolog,
+        .token.doctype,
+        .token.cdata {
+            color: slategray;
+        }
+
+        .token.punctuation {
+            color: #999;
+        }
+
+        .token.namespace {
+            opacity: .7;
+        }
+
+        .token.property,
+        .token.tag,
+        .token.boolean,
+        .token.number,
+        .token.constant,
+        .token.symbol,
+        .token.deleted {
+            color: #905;
+        }
+
+        .token.selector,
+        .token.attr-name,
+        .token.string,
+        .token.char,
+        .token.builtin,
+        .token.inserted {
+            color: #690;
+        }
+
+        .token.operator,
+        .token.entity,
+        .token.url,
+        .language-css .token.string,
+        .style .token.string {
+            color: #9a6e3a;
+            /* This background color was intended by the author of this theme. */
+            background: hsla(0, 0%, 100%, .5);
+        }
+
+        .token.atrule,
+        .token.attr-value,
+        .token.keyword {
+            color: #07a;
+        }
+
+        .token.function,
+        .token.class-name {
+            color: #DD4A68;
+        }
+
+        .token.regex,
+        .token.important,
+        .token.variable {
+            color: #e90;
+        }
+
+        .token.important,
+        .token.bold {
+            font-weight: bold;
+        }
+
+        .token.italic {
+            font-style: italic;
+        }
+
+        .token.entity {
+            cursor: help;
+        }
+
+    </style>
+    <style>
+
+    </style>
+    <style>
+        .markdown-body {
+            font-family: -apple-system, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        @media not print {
+            .markdown-body {
+                padding: 45px;
+            }
+
+            @media (max-width: 767px) {
+                .markdown-body {
+                    padding: 15px;
+                }
+            }
+        }
+
+        .hf-container {
+            color: #24292e;
+            line-height: 1.3;
+        }
+
+        .markdown-body .highlight pre,
+        .markdown-body pre {
+            white-space: pre-wrap;
+        }
+
+        .markdown-body table {
+            display: table;
+        }
+
+        .markdown-body img[data-align="center"] {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .markdown-body img[data-align="right"] {
+            display: block;
+            margin: 0 0 0 auto;
+        }
+
+        .markdown-body li.task-list-item {
+            list-style-type: none;
+        }
+
+        .markdown-body li > [type=checkbox] {
+            margin: 0 0 0 -1.3em;
+        }
+
+        .markdown-body input[type="checkbox"] ~ p {
+            margin-top: 0;
+            display: inline-block;
+        }
+
+        .markdown-body ol ol,
+        .markdown-body ul ol {
+            list-style-type: decimal;
+        }
+
+        .markdown-body ol ol ol,
+        .markdown-body ol ul ol,
+        .markdown-body ul ol ol,
+        .markdown-body ul ul ol {
+            list-style-type: decimal;
+        }
+    </style>
+    <style>.markdown-body a.footnote-ref {
+        text-decoration: none;
+    }
+
+    .footnotes {
+        font-size: .85em;
+        opacity: .8;
+    }
+
+    .footnotes li[role="doc-endnote"] {
+        position: relative;
+    }
+
+    .footnotes .footnote-back {
+        position: absolute;
+        font-family: initial;
+        top: .2em;
+        right: 1em;
+        text-decoration: none;
+    }
+
+    .inline-math.invalid,
+    .multiple-math.invalid {
+        color: rgb(255, 105, 105);
+    }
+
+    .toc-container {
+        width: 100%;
+    }
+
+    .toc-container .toc-title {
+        font-weight: 700;
+        font-size: 1.2em;
+        margin-bottom: 0;
+    }
+
+    .toc-container li,
+    .toc-container ul,
+    .toc-container ul li {
+        list-style: none !important;
+    }
+
+    .toc-container > ul {
+        padding-left: 0;
+    }
+
+    .toc-container ul li span {
+        display: flex;
+    }
+
+    .toc-container ul li span a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .toc-container ul li span a:hover {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .toc-container ul li span span.dots {
+        flex: 1;
+        height: 0.65em;
+        margin: 0 10px;
+        border-bottom: 2px dotted black;
+    }
+    </style>
+    <style>.markdown-body {
+    }
+
+    body {
+        counter-reset: h2
+    }
+
+    h2 {
+        counter-reset: h3
+    }
+
+    h3 {
+        counter-reset: h4
+    }
+
+    h4 {
+        counter-reset: h5
+    }
+
+    h5 {
+        counter-reset: h6
+    }
+
+    h2:before {
+        counter-increment: h2;
+        content: counter(h2) ". "
+    }
+
+    h3:before {
+        counter-increment: h3;
+        content: counter(h2) "." counter(h3) ". "
+    }
+
+    h4:before {
+        counter-increment: h4;
+        content: counter(h2) "." counter(h3) "." counter(h4) ". "
+    }
+
+    h5:before {
+        counter-increment: h5;
+        content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". "
+    }
+
+    h6:before {
+        counter-increment: h6;
+        content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". "
+    }
+
+    h2.nocount:before, h3.nocount:before, h4.nocount:before, h5.nocount:before, h6.nocount:before {
+        content: "";
+        counter-increment: none
+    }
+
+    pre.front-matter {
+        display: none !important;
+    }</style>
+
+    <link rel="stylesheet" href="w3.css">
+</head>
+<body>
+<div class="w3-bar w3-cyan w3-text-white">
+    <a href="./HTML.html" class="w3-bar-item w3-button">Základy HTML</a>
+    <a href="./CSS.html" class="w3-bar-item w3-button">Základy CSS</a>
+    <a href="./Javascript.html" class="w3-bar-item w3-button">Základy JS</a>
+    <a href="./index.html" class="w3-bar-item w3-button">Základy Vue</a>
+    <a href="./webpack.html" class="w3-bar-item w3-button">Webpack</a>
+    <a href="./sfc.html" class="w3-bar-item w3-button">Single File Component</a>
+    <a href="./composition-api.html" class="w3-bar-item w3-button">Composition API</a>
+    <a href="./quasar.html" class="w3-bar-item w3-button">Quasar</a>
+</div>
+<article class="markdown-body"><h1 class="atx" id="quasar">Quasar</h1>
+    <h2 class="atx" id="obsah">Obsah</h2>
+    <ul>
+        <li><a href="#quasar">Quasar</a>
+            <ul>
+                <li><a href="#instalace">Instalace</a></li>
+                <li><a href="#vytvo-en--projektu">Vytvoření projektu</a></li>
+                <li><a href="#konfigurace">Konfigurace</a></li>
+                <li><a href="#z-kladn--koncepty">Základní koncepty</a></li>
+                <li><a href="#styl-a-grafika">Styl a grafika</a>
+                    <ul>
+                        <li><a href="#-p-smo--https---quasardev-style-typography-"></a><a
+                                href="https://quasar.dev/style/typography">Písmo</a></li>
+                        <li><a href="#-barva--https---quasardev-style-color-palette-"></a><a
+                                href="https://quasar.dev/style/color-palette">Barva</a></li>
+                        <li><a href="#-mezery-a-okraje--https---quasardev-style-spacing-introduction-"></a><a
+                                href="https://quasar.dev/style/spacing#introduction">Mezery a okraje</a></li>
+                        <li><a href="#-viditelnost--https---quasardev-style-visibility-"></a><a
+                                href="https://quasar.dev/style/visibility">Viditelnost</a></li>
+                        <li><a href="#-zarovn-n---https---quasardev-style-positioning-"></a><a
+                                href="https://quasar.dev/style/positioning">Zarovnání</a></li>
+                    </ul>
+                </li>
+                <li><a href="#layout-a-m---ka--grid-">Layout a mřížka (grid)</a>
+                    <ul>
+                        <li><a href="#-vod-do-flexbox-">Úvod do Flexboxů</a></li>
+                        <li><a href="#-layout--https---quasardev-layout-layout-"></a><a
+                                href="https://quasar.dev/layout/layout">Layout</a></li>
+                        <li><a href="#-layout-header-and-footer--https---quasardev-layout-header-and-footer-"></a><a
+                                href="https://quasar.dev/layout/header-and-footer">Layout Header and Footer</a></li>
+                    </ul>
+                </li>
+                <li><a href="#komponenty">Komponenty</a></li>
+            </ul>
+        </li>
+    </ul>
+    <h2 class="atx" id="instalace">Instalace</h2>
+    <pre><code class="fenced-code-block language-bash"><span class="token function">yarn</span> global <span
+            class="token function">add</span> @quasar/cli</code></pre>
+    <h2 class="atx" id="vytvoreni-projektu">Vytvoření projektu</h2>
+    <pre><code class="fenced-code-block language-bash">  <span class="token function">yarn</span> create quasar
+  <span class="token comment"># OR</span>
+  <span class="token function">npm</span> init quasar</code></pre>
+    <ul>
+        <li><img alt=""
+                 src="https://remnote-user-data.s3.amazonaws.com/yZEA80IwzqgCpXCjVVU2NTQC8onr4p39I_CFClAgSQYsEUWkigFRg3XIoq3RInF14WG7EE3EV65YzdA-gPBW4Qlbfvlr61heMWtmOWxB-tcJm1fcrXJle8DcUQg0BMGJ.png">
+        </li>
+        <li><img alt=""
+                 src="https://remnote-user-data.s3.amazonaws.com/Fbf7haPtYllVvDGznG17aV41F8d6haNZtCfaanZfZHEotdZa61el4anGSylsZd57dFcZyoXXyT4WGOMl-aGbzQQ1lgl04BIsptY8YgzKUn1eWWBYiVYG8GjnUS1HXSGI.png">
+        </li>
+        <li><img alt=""
+                 src="https://remnote-user-data.s3.amazonaws.com/8BCjDcM00whNjnTIllD5XX3w_ee6J1WNee9Bbgo8ITFnVVPD_teUxR4xuazrHh5IRgW5QPFQlKQE-ggQjs_bFdhR-mW_5EcwpgBrywbwQKFyAiYCQrdf5bUxETzIj8Zk.png">
+        </li>
+        <li><img alt=""
+                 src="https://remnote-user-data.s3.amazonaws.com/nscOaa28NsEoFqK_spLuGbKDOCG-6dJfxYAtD9NTFQxUq1f_YsjTP2_OjbKaYHlwR5llfyuoI3LTz-E6QuaHdVf9zXLL7nJe65kMlJZ-vQGegLU8begD_9wj_DgXhvrh.png">
+        </li>
+    </ul>
+    <h2 class="atx" id="konfigurace">Konfigurace</h2>
+    <p><code>quasar.conf.js</code></p>
+    <p>Konfigurační soubor, který nastavuje veškerou funkcionalitu, kterou poskytuje Quasar:</p>
+    <ul>
+        <li>Výběr použitých komponent, pluginů a directives.</li>
+        <li>Jazyk/jazyky aplikace</li>
+        <li>Knihovna/y ikon</li>
+        <li>Defaultní knihovna pro ikony</li>
+        <li>Nastavení vývojového serveru:
+            <ul>
+                <li>port</li>
+                <li>HTTPS mode</li>
+                <li>hostname</li>
+            </ul>
+        </li>
+        <li>Nastavení CSS animací</li>
+        <li>Nastavení bootování a jeho pořadí ve spouštění ze složky <code>/src/boot</code>.</li>
+        <li>Zahrnutí CSS dokumentů, které maji být zahrnuty.</li>
+        <li>Nastavení PWA aplikace</li>
+        <li>Nastavení Electronu pro generování desktopové aplikace</li>
+    </ul>
+    <h2 class="atx" id="zakladni-koncepty">Základní koncepty</h2>
+    <p>Quasar využívá Single file component z Vue, ale kromě toho Vue rozšiřuje o následující nástroje:</p>
+    <ul>
+        <li>Quasar directives:</li>
+    </ul>
+    <pre><code class="fenced-code-block language-bash"><span class="token operator">&lt;</span>div v-ripple<span
+            class="token operator">&gt;</span>Click Me<span class="token operator">&lt;</span>/div<span
+            class="token operator">&gt;</span></code></pre>
+    <ul>
+        <li>Quasar components</li>
+    </ul>
+    <pre><code class="fenced-code-block language-html"><span class="token tag"><span class="token tag"><span
+            class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-btn</span> <span
+            class="token attr-name">@click</span><span class="token attr-value"><span
+            class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>doSomething<span
+            class="token punctuation">"</span></span> <span class="token attr-name">label</span><span
+            class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+            class="token punctuation">"</span>Do something<span class="token punctuation">"</span></span><span
+            class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-icon</span> <span
+            class="token attr-name">name</span><span class="token attr-value"><span
+            class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>alarm<span
+            class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+        class="token punctuation">&gt;</span></span></code></pre>
+    <ul>
+        <li>Quasar plugins musí se uvést v <code>quasar.conf.js</code></li>
+    </ul>
+    <pre><code class="fenced-code-block">framework: {
+    plugins: ['Notify', 'BottomSheet']
+}
+}</code></pre>
+    <p><code>&lt;koponenta.vue&gt;</code></p>
+    <pre><code class="fenced-code-block language-html"><span class="token tag"><span class="token tag"><span
+            class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span
+            class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-btn</span>
+                <span class="token attr-name">@click</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span
+                    class="token punctuation">"</span>$q.notify(<span class="token punctuation">'</span>My message<span
+                    class="token punctuation">'</span>)<span class="token punctuation">"</span></span>
+                <span class="token attr-name">color</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>primary<span
+                    class="token punctuation">"</span></span>
+                <span class="token attr-name">label</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Show a notification<span
+                    class="token punctuation">"</span></span>
+        <span class="token punctuation">/&gt;</span></span>
+
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-btn</span>
+                <span class="token attr-name">@click</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>showNotification<span
+                    class="token punctuation">"</span></span>
+                <span class="token attr-name">color</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>primary<span
+                    class="token punctuation">"</span></span>
+                <span class="token attr-name">label</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Show another notification<span
+                    class="token punctuation">"</span></span>
+        <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+            class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span
+        class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span
+        class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+    <span class="token keyword">import</span> <span class="token punctuation">{</span>useQuasar<span
+                class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'quasar'</span>
+
+    <span class="token keyword">export</span> <span class="token keyword">default</span> <span
+                class="token punctuation">{</span>
+        <span class="token function">setup</span><span class="token punctuation">(</span><span
+                class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">const</span> $q <span class="token operator">=</span> <span
+                class="token function">useQuasar</span><span class="token punctuation">(</span><span
+                class="token punctuation">)</span>
+
+            <span class="token keyword">function</span> <span class="token function">showNotification</span><span
+                class="token punctuation">(</span><span class="token punctuation">)</span> <span
+                class="token punctuation">{</span>
+                $q<span class="token punctuation">.</span><span class="token function">notify</span><span
+                class="token punctuation">(</span><span class="token string">'Some other message'</span><span
+                class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+
+            <span class="token keyword">return</span> <span class="token punctuation">{</span>
+                showNotification
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span
+                class="token punctuation">&lt;/</span>script</span><span
+                class="token punctuation">&gt;</span></span></code></pre>
+    <h2 class="atx" id="styl-a-grafika">Styl a grafika</h2>
+    <h3 class="atx" id="pismo"><a href="https://quasar.dev/style/typography">Písmo</a></h3>
+    <p>Přidání vlastního písma:</p>
+    <ol>
+        <li>Nakopíruj písmo s koncovkou <code>.woff</code> do adresáře <code>./src/css/fonts/[customfont.woff]</code>.
+        </li>
+        <li>Deklaruj tvoje nové písmo v <code>./src/css/app.{css|sass|scss|styl}</code>:</li>
+    </ol>
+    <pre><code class="fenced-code-block language-css"><span class="token atrule"><span
+            class="token rule">@font-face</span></span> <span class="token punctuation">{</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> customfont<span
+                class="token punctuation">;</span>
+  <span class="token property">src</span><span class="token punctuation">:</span> <span class="token url"><span
+                class="token function">url</span><span class="token punctuation">(</span>./fonts/customfont.woff<span
+                class="token punctuation">)</span></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">// declare a class which applies it
+.my-font</span> <span class="token punctuation">{</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">'customfont'</span><span
+                class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+    <h3 class="atx" id="barva"><a href="https://quasar.dev/style/color-palette">Barva</a></h3>
+    <p>Quasar má vlastní předdefinované barvy v souboru <code>/src/css/quasar.variables.sass</code>, které můžeme
+        libovolně měnit. Vlastní
+        barevný styl lze nastavit v Theme Builder. Quasar má vlastní color
+        list: <a href="https://quasar.dev/style/color-palette#color-list">Color Palette | Quasar Framework</a></p>
+    <p><strong>Použití</strong>:</p>
+    <ul>
+        <li>barva písma:</li>
+    </ul>
+    <pre><code class="fenced-code-block language-html"><span
+            class="token comment">&lt;!-- changing text color --&gt;</span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span
+        class="token attr-name">class</span><span class="token attr-value"><span
+        class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-primary<span
+        class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>....<span
+                class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span
+                class="token punctuation">&gt;</span></span></code></pre>
+    <ul>
+        <li>barva pozadí:</li>
+    </ul>
+    <pre><code class="fenced-code-block language-html"><span class="token comment">&lt;!-- changing background color --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span
+        class="token attr-name">class</span><span class="token attr-value"><span
+        class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>bg-positive<span
+        class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>...<span
+                class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span
+                class="token punctuation">&gt;</span></span></code></pre>
+    <p>Dynamická (programatická) změna
+        barvy: <a href="https://quasar.dev/style/color-palette#dynamic-change-of-brand-colors-dynamic-theme-colors-">Color
+            Palette | Quasar Framework</a></p>
+    <h3 class="atx" id="mezery-a-okraje"><a href="https://quasar.dev/style/spacing#introduction">Mezery a okraje</a>
+    </h3>
+    <p>Quasar používá variabilní nazvy tříd, které nastavují <code>padding</code> a <code>margin</code></p>
+    <p>Syntaxe je následující:</p>
+    <pre><code class="fenced-code-block language---">q-[p|m][t|r|b|l|a|x|y]-[none|auto|xs|sm|md|lg|xl]</code></pre>
+    <ul>
+        <li>třída začíná vždy písmenem q</li>
+        <li>poté se nastavuje typ: p - <code>padding</code> nebo m - <code>margin</code></li>
+        <li>následuje směr (direction):
+            <ul>
+                <li>t - top</li>
+                <li>r - right</li>
+                <li>b - bottom</li>
+                <li>l - left</li>
+                <li>a - all</li>
+                <li>x - left and right</li>
+                <li>y - top and bottom</li>
+            </ul>
+        </li>
+        <li>nakonec je velikost:
+            <ul>
+                <li>xs - extra malé</li>
+                <li>sm - malé</li>
+                <li>md - střední</li>
+                <li>lg - velké</li>
+                <li>xl - extra velké</li>
+            </ul>
+        </li>
+    </ul>
+    <p>Pokud nechceme <code>margin</code> a/nebo <code>padding</code>, tak použijeme tyto classy:</p>
+    <ul>
+        <li><code>no-margin</code></li>
+        <li><code>no-padding</code></li>
+    </ul>
+    <p><strong>Příklad</strong>:
+        <code>SpacingPage.vue</code></p>
+    <pre><code class="fenced-code-block language-html"><span class="token tag"><span class="token tag"><span
+            class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-page</span><span
+            class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                class="token attr-name">class</span><span class="token attr-value"><span
+                class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>q-ma-xl<span
+                class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span
+                    class="token punctuation">&gt;</span></span>Ahoj<span class="token tag"><span
+                class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                class="token attr-name">class</span><span class="token attr-value"><span
+                class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>q-pa-xl<span
+                class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span
+                    class="token punctuation">&gt;</span></span>Ahoj<span class="token tag"><span
+                class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                class="token attr-name">class</span><span class="token attr-value"><span
+                class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>no-padding<span
+                class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span
+                    class="token punctuation">&gt;</span></span>Ahoj<span class="token tag"><span
+                class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-page</span><span
+            class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span
+        class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span
+        class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+    <span class="token keyword">export</span> <span class="token keyword">default</span> <span
+                class="token punctuation">{</span>
+        name<span class="token operator">:</span> <span class="token string">'SpacingPage'</span><span
+                class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span
+                class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span
+        class="token attr-name">scoped</span><span class="token punctuation">&gt;</span></span><span
+                class="token style"><span class="token language-css">
+    <span class="token selector">div</span> <span class="token punctuation">{</span>
+        <span class="token property">border</span><span class="token punctuation">:</span> 5px solid red<span
+                class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span
+                class="token punctuation">&lt;/</span>style</span><span
+                class="token punctuation">&gt;</span></span></code></pre>
+    <p><code>routes.js</code></p>
+    <pre><code class="fenced-code-block language-javascript"><span class="token keyword">const</span> routes <span
+            class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+        path<span class="token operator">:</span> <span class="token string">'/'</span><span
+                class="token punctuation">,</span>
+        <span class="token function-variable function">component</span><span class="token operator">:</span> <span
+                class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span
+                class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'layouts/MainLayout.vue'</span><span
+                class="token punctuation">)</span><span class="token punctuation">,</span>
+        children<span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>path<span class="token operator">:</span> <span
+                class="token string">''</span><span class="token punctuation">,</span> <span
+                class="token function-variable function">component</span><span class="token operator">:</span> <span
+                class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span
+                class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'pages/IndexPage.vue'</span><span
+                class="token punctuation">)</span><span class="token punctuation">}</span><span
+                class="token punctuation">,</span>
+            <span class="token punctuation">{</span>path<span class="token operator">:</span> <span
+                class="token string">'spacing'</span><span class="token punctuation">,</span> <span
+                class="token function-variable function">component</span><span class="token operator">:</span> <span
+                class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span
+                class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'pages/SpacingPage.vue'</span><span
+                class="token punctuation">)</span><span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// Always leave this as last one,</span>
+    <span class="token comment">// but you can also remove it</span>
+    <span class="token punctuation">{</span>
+        path<span class="token operator">:</span> <span class="token string">'/:catchAll(.*)*'</span><span
+                class="token punctuation">,</span>
+        <span class="token function-variable function">component</span><span class="token operator">:</span> <span
+                class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span
+                class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'pages/ErrorNotFound.vue'</span><span
+                class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> routes</code></pre>
+    <p><a href="https://quasar.dev/style/shadows">Stíny</a></p>
+    <p>Syntaxe viz dokumentace</p>
+    <p>Příklad:</p>
+    <pre><code class="fenced-code-block language-vue">&lt;template&gt;
+  &lt;div class="q-pa-md"&gt;
+    &lt;h1&gt;
+      Bottom shadow
+    &lt;/h1&gt;
+    &lt;div
+        class="flex inline shadow-box flex-center"
+        v-for="n in 24" :key="n"
+        :class="`shadow-${n}`"
+    &gt;
+      .shadow-{{ n }}
+    &lt;/div&gt;
+    &lt;h1&gt;
+      Top shadow
+    &lt;/h1&gt;
+    &lt;div
+        class="flex inline shadow-box flex-center"
+        v-for="n in 24" :key="n"
+        :class="`shadow-up-${n}`"
+    &gt;
+      .shadow-up-{{ n }}
+    &lt;/div&gt;
+    &lt;h1&gt;
+      Inset shadow
+    &lt;/h1&gt;
+    &lt;div class="inset-shadow flex inline shadow-box flex-center doc-inset-shadow"&gt;
+      .inset-shadow
+    &lt;/div&gt;
+
+    &lt;div class="inset-shadow-down flex inline shadow-box flex-center doc-inset-shadow"&gt;
+      .inset-shadow-down
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;style lang="sass" scoped&gt;
+.shadow-box
+  width: 90px
+  height: 90px
+  margin: 25px
+  border-radius: 50%
+  font-size: 12px
+&lt;/style&gt;</code></pre>
+    <h3 class="atx" id="viditelnost"><a href="https://quasar.dev/style/visibility">Viditelnost</a></h3>
+    <p>syntaxe: viz dokumentace</p>
+    <p>příklad:</p>
+    <p><code>VisibilityPage.vue</code></p>
+    <pre><code class="fenced-code-block language-vue">&lt;template&gt;
+  &lt;q-page&gt;
+    &lt;div class="q-pa-lg light-dimmed"&gt;
+      &lt;p&gt;Ahoj&lt;/p&gt;
+      &lt;img
+          src="data:image/png;base64,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"
+          alt="quasar logo"&gt;
+    &lt;/div&gt;
+    &lt;div class="z-top popup"&gt;
+      &lt;h1&gt;Pop up&lt;/h1&gt;
+    &lt;/div&gt;
+  &lt;/q-page&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  name: "VisibilityPage"
+}
+&lt;/script&gt;
+
+&lt;style scoped&gt;
+.popup {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+}
+&lt;/style&gt;</code></pre>
+    <p>Nezapomenout doplnit do routeru cestu!!!</p>
+    <h3 class="atx" id="zarovnani"><a href="https://quasar.dev/style/positioning">Zarovnání</a></h3>
+    <p>Syntaxe: viz dokumentace</p>
+    <p>Příklad:</p>
+    <pre><code class="fenced-code-block language-vue">&lt;template&gt;
+  &lt;q-page&gt;
+    &lt;div class="fixed"&gt;
+      &lt;h1&gt;Zůstane nahoře&lt;/h1&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut enim ad minima veniam, quis nostrum exercitationem
+        ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Aliquam ornare wisi eu metus.
+        Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Nam libero tempore, cum soluta nobis
+        est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas
+        assumenda est, omnis dolor repellendus. Etiam bibendum elit eget erat. Duis sapien nunc, commodo et, interdum
+        suscipit, sollicitudin et, dolor. Vivamus porttitor turpis ac leo. Duis ante orci, molestie vitae vehicula
+        venenatis, tincidunt ac pede. Nullam faucibus mi quis velit.
+
+        Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Mauris elementum mauris vitae tortor. Fusce
+        suscipit libero eget elit. Mauris tincidunt sem sed arcu. Proin in tellus sit amet nibh dignissim sagittis.
+        Nullam faucibus mi quis velit. Nulla quis diam. Aliquam ante. Etiam dictum tincidunt diam. Sed convallis magna
+        eu sem. Fusce wisi. Nullam faucibus mi quis velit.
+
+        Aliquam erat volutpat. Etiam posuere lacus quis dolor. Integer imperdiet lectus quis justo. Duis sapien nunc,
+        commodo et, interdum suscipit, sollicitudin et, dolor. Proin in tellus sit amet nibh dignissim sagittis. In
+        convallis. Integer in sapien. Etiam egestas wisi a erat. Donec quis nibh at felis congue commodo. Duis aute
+        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Aenean vel massa
+        quis mauris vehicula lacinia. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+        molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Donec vitae arcu. Cras pede
+        libero, dapibus nec, pretium sit amet, tempor quis. Nunc dapibus tortor vel mi dapibus sollicitudin. Nullam
+        dapibus fermentum ipsum. Nulla non arcu lacinia neque faucibus fringilla. Nullam sapien sem, ornare ac, nonummy
+        non, lobortis a enim.
+
+        Duis ante orci, molestie vitae vehicula venenatis, tincidunt ac pede. Fusce wisi. Morbi leo mi, nonummy eget
+        tristique non, rhoncus non leo. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Etiam sapien
+        elit, consequat eget, tristique non, venenatis quis, ante. Etiam dui sem, fermentum vitae, sagittis id,
+        malesuada in, quam. Integer tempor. Mauris dictum facilisis augue. Fusce dui leo, imperdiet in, aliquam sit
+        amet, feugiat eu, orci. Integer vulputate sem a nibh rutrum consequat. In laoreet, magna id viverra tincidunt,
+        sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Nulla est. Mauris dolor felis, sagittis at,
+        luctus sed, aliquam non, tellus. Aliquam id dolor. Etiam posuere lacus quis dolor. Mauris suscipit, ligula sit
+        amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Neque porro quisquam est, qui
+        dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt
+        ut labore et dolore magnam aliquam quaerat voluptatem. Aenean vel massa quis mauris vehicula lacinia. Maecenas
+        fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus.
+
+        Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat. Itaque earum rerum hic tenetur a sapiente
+        delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores
+        repellat. Fusce tellus. Mauris elementum mauris vitae tortor. Maecenas lorem. Fusce nibh. Donec ipsum massa,
+        ullamcorper in, auctor et, scelerisque sed, est. Cum sociis natoque penatibus et magnis dis parturient montes,
+        nascetur ridiculus mus. Praesent dapibus. Etiam bibendum elit eget erat. Curabitur ligula sapien, pulvinar a
+        vestibulum quis, facilisis vel sapien.
+
+        Nam sed tellus id magna elementum tincidunt. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci.
+        Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. In rutrum. Itaque earum rerum hic
+        tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus
+        asperiores repellat. Aliquam ante. Nulla pulvinar eleifend sem. Vivamus luctus egestas leo. Itaque earum rerum
+        hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis
+        doloribus asperiores repellat. Nullam faucibus mi quis velit.
+
+        In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Phasellus
+        rhoncus. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. In laoreet, magna id viverra
+        tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Vivamus luctus egestas leo. Aliquam
+        ornare wisi eu metus. Aliquam id dolor. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam,
+        tempor suscipit diam nulla vel leo. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+        nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Nullam lectus justo,
+        vulputate eget mollis sed, tempor sed magna.
+
+        Aliquam ante. Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. Nulla pulvinar eleifend
+        sem. Aliquam erat volutpat. Aenean id metus id velit ullamcorper pulvinar. Curabitur bibendum justo non orci. In
+        rutrum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Duis bibendum, lectus ut viverra rhoncus, dolor nunc faucibus libero, eget facilisis enim ipsum id lacus. Nullam
+        sapien sem, ornare ac, nonummy non, lobortis a enim. Morbi imperdiet, mauris ac auctor dictum, nisl ligula
+        egestas nulla, et sollicitudin sem purus in lacus. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Class aptent
+        taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Donec ipsum massa, ullamcorper
+        in, auctor et, scelerisque sed, est.
+
+        Duis viverra diam non justo. In dapibus augue non sapien. Fusce tellus. Itaque earum rerum hic tenetur a
+        sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores
+        repellat. Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat. Curabitur ligula sapien,
+        pulvinar a vestibulum quis, facilisis vel sapien. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+        qui officia deserunt mollit anim id est laborum. Pellentesque sapien. Pellentesque ipsum. Cras elementum. Nulla
+        accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo.
+
+        Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum
+        qui dolorem eum fugiat quo voluptas nulla pariatur? Nulla non arcu lacinia neque faucibus fringilla.
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cum sociis natoque
+        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam bibendum elit eget erat. Praesent in
+        mauris eu tortor porttitor accumsan. Fusce consectetuer risus a nunc. Donec ipsum massa, ullamcorper in, auctor
+        et, scelerisque sed, est. Maecenas sollicitudin. Mauris suscipit, ligula sit amet pharetra semper, nibh ante
+        cursus purus, vel sagittis velit mauris vel metus. Nullam lectus justo, vulputate eget mollis sed, tempor sed
+        magna. Nulla pulvinar eleifend sem. Nullam sapien sem, ornare ac, nonummy non, lobortis a enim. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed vel lectus. Donec odio tempus
+        molestie, porttitor ut, iaculis quis, sem. Proin mattis lacinia justo. Integer rutrum, orci vestibulum
+        ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim.
+
+        Quisque porta. Praesent vitae arcu tempor neque lacinia pretium. Sed vel lectus. Donec odio tempus molestie,
+        porttitor ut, iaculis quis, sem. Vivamus ac leo pretium faucibus. Praesent dapibus. Sed vel lectus. Donec odio
+        tempus molestie, porttitor ut, iaculis quis, sem. Aliquam erat volutpat. Nulla quis diam. Aenean id metus id
+        velit ullamcorper pulvinar. Nulla quis diam. Nullam rhoncus aliquam metus. In laoreet, magna id viverra
+        tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Nulla turpis magna, cursus sit amet,
+        suscipit a, interdum id, felis. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+        vitae dicta sunt explicabo. Nunc dapibus tortor vel mi dapibus sollicitudin. Mauris elementum mauris vitae
+        tortor. Morbi leo mi, nonummy eget tristique non, rhoncus non leo.
+
+        Aliquam ante. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+        magni dolores eos qui ratione voluptatem sequi nesciunt. Nullam faucibus mi quis velit. Phasellus et lorem id
+        felis nonummy placerat. Donec iaculis gravida nulla. Nullam faucibus mi quis velit. Mauris dictum facilisis
+        augue. Morbi scelerisque luctus velit. Aliquam erat volutpat. Pellentesque sapien. Duis ante orci, molestie
+        vitae vehicula venenatis, tincidunt ac pede. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis
+        quam, tempor suscipit diam nulla vel leo. Integer lacinia. Cras elementum. Quis autem vel eum iure reprehenderit
+        qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas
+        nulla pariatur? Quisque tincidunt scelerisque libero. Aliquam erat volutpat. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos hymenaeos. Integer rutrum, orci vestibulum ullamcorper
+        ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Quisque porta.
+
+        Aenean vel massa quis mauris vehicula lacinia. Nulla quis diam. Class aptent taciti sociosqu ad litora torquent
+        per conubia nostra, per inceptos hymenaeos. Integer in sapien. Donec iaculis gravida nulla. Nulla quis diam.
+        Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus.
+        Integer tempor. Aliquam ornare wisi eu metus. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui.
+        Donec quis nibh at felis congue commodo. Mauris dictum facilisis augue. Nullam lectus justo, vulputate eget
+        mollis sed, tempor sed magna. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Nullam
+        faucibus mi quis velit. Pellentesque arcu. Mauris tincidunt sem sed arcu. Nulla non arcu lacinia neque faucibus
+        fringilla. In dapibus augue non sapien.
+
+        In enim a arcu imperdiet malesuada. Nulla pulvinar eleifend sem. Nulla quis diam. In sem justo, commodo ut,
+        suscipit at, pharetra vitae, orci. Etiam neque. Itaque earum rerum hic tenetur a sapiente delectus, ut aut
+        reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Phasellus
+        rhoncus. Nullam sapien sem, ornare ac, nonummy non, lobortis a enim. Nulla est. Praesent in mauris eu tortor
+        porttitor accumsan. Integer tempor. Cras elementum. Maecenas lorem.
+
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+        Aenean vel massa quis mauris vehicula lacinia. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui.
+        Nullam sapien sem, ornare ac, nonummy non, lobortis a enim. Nulla quis diam. Nemo enim ipsam voluptatem quia
+        voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+        nesciunt. Donec quis nibh at felis congue commodo. Integer pellentesque quam vel velit. Nullam rhoncus aliquam
+        metus. Curabitur sagittis hendrerit ante. Aliquam id dolor.
+
+        Praesent vitae arcu tempor neque lacinia pretium. Nunc auctor. Phasellus rhoncus. Quisque tincidunt scelerisque
+        libero. Aenean placerat. Etiam ligula pede, sagittis quis, interdum ultricies, scelerisque eu. Nemo enim ipsam
+        voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+        voluptatem sequi nesciunt. Nunc tincidunt ante vitae massa. Mauris elementum mauris vitae tortor. Pellentesque
+        pretium lectus id turpis. Nullam eget nisl. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+        consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam
+        quaerat voluptatem. Nunc auctor. Quisque tincidunt scelerisque libero. Etiam ligula pede, sagittis quis,
+        interdum ultricies, scelerisque eu. Suspendisse sagittis ultrices augue. Nulla accumsan, elit sit amet varius
+        semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Nullam sit amet magna in magna gravida
+        vehicula. Nunc auctor.
+
+        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+        numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Aliquam erat volutpat.
+        Vestibulum fermentum tortor id mi. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+        adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+        voluptatem. In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Cras pede libero, dapibus nec, pretium
+        sit amet, tempor quis. Ut tempus purus at lorem. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis
+        vel sapien. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+        magni dolores eos qui ratione voluptatem sequi nesciunt. Class aptent taciti sociosqu ad litora torquent per
+        conubia nostra, per inceptos hymenaeos. Phasellus faucibus molestie nisl. Aliquam erat volutpat. Proin mattis
+        lacinia justo. Integer imperdiet lectus quis justo. Nulla accumsan, elit sit amet varius semper, nulla mauris
+        mollis quam, tempor suscipit diam nulla vel leo. In laoreet, magna id viverra tincidunt, sem odio bibendum
+        justo, vel imperdiet sapien wisi sed libero. Nullam sapien sem, ornare ac, nonummy non, lobortis a enim. Mauris
+        metus. Vestibulum fermentum tortor id mi. Etiam commodo dui eget wisi.
+
+        Etiam quis quam. Mauris dictum facilisis augue. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        Aliquam in lorem sit amet leo accumsan lacinia. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+        architecto beatae vitae dicta sunt explicabo. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Duis
+        condimentum augue id magna semper rutrum. Maecenas lorem. In laoreet, magna id viverra tincidunt, sem odio
+        bibendum justo, vel imperdiet sapien wisi sed libero. Fusce suscipit libero eget elit. Pellentesque sapien.
+        Fusce aliquam vestibulum ipsum. Nullam faucibus mi quis velit. Aenean fermentum risus id tortor. Itaque earum
+        rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis
+        doloribus asperiores repellat. Nullam dapibus fermentum ipsum. Nunc auctor. Pellentesque arcu. Phasellus
+        rhoncus.
+
+        Quisque porta. Phasellus faucibus molestie nisl. Aliquam id dolor. Integer tempor. Maecenas lorem. Aliquam id
+        dolor. Aliquam ornare wisi eu metus. Phasellus et lorem id felis nonummy placerat. Nullam rhoncus aliquam metus.
+        Praesent in mauris eu tortor porttitor accumsan. Nunc dapibus tortor vel mi dapibus sollicitudin. Aenean id
+        metus id velit ullamcorper pulvinar. Et harum quidem rerum facilis est et expedita distinctio. Etiam ligula
+        pede, sagittis quis, interdum ultricies, scelerisque eu. Ut tempus purus at lorem. Suspendisse nisl.
+
+        Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Aenean id metus id velit ullamcorper
+        pulvinar. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. In enim a arcu imperdiet malesuada.
+        Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus. Fusce
+        wisi. Donec quis nibh at felis congue commodo. Fusce suscipit libero eget elit. Phasellus et lorem id felis
+        nonummy placerat. Duis ante orci, molestie vitae vehicula venenatis, tincidunt ac pede. Morbi leo mi, nonummy
+        eget tristique non, rhoncus non leo.
+      &lt;/p&gt;
+
+    &lt;/div&gt;
+  &lt;/q-page&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  name: "PositionPage"
+}
+&lt;/script&gt;
+
+&lt;style scoped&gt;
+
+&lt;/style&gt;</code></pre>
+    <h2 class="atx" id="layout-a-mrizka-grid">Layout a mřížka (grid)</h2>
+    <h3 class="atx" id="uvod-do-flexboxu">Úvod do Flexboxů</h3>
+    <p>Základní koncept:</p>
+    <p><img alt=""
+            src="https://remnote-user-data.s3.amazonaws.com/cDa7GlL171tbLD38Y-ldTmYVEw58s7xTITil9iaC9T7pr31VXeByVkoxSb6cbKncaXfl943ceqlegdsJyfzW-p2V5HcSR_tzA2bEbo2pCH6HIlN_VSG-Bo5fvGGuTDWv.svg">
+        <img alt=""
+             src="https://remnote-user-data.s3.amazonaws.com/DFY8Ld59F79-Rw6SZ8yb95VTkBIErV-72b7Cw7-CzXUg5fsNKXFQdaMTPawOvhTGZ9NFOnXW-4C_BAu3KDYPbGUK6dXkLBal3JmVwKbtgmPQze5vb_1QbQ9t3ZzM2o-8.svg">
+    </p>
+    <p>Příklad:</p>
+    <pre><code class="fenced-code-block language-html"><span class="token tag"><span class="token tag"><span
+            class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-page</span><span
+            class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span
+                class="token punctuation">&gt;</span></span>Row<span class="token tag"><span class="token tag"><span
+                class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                class="token attr-name">class</span><span class="token attr-value"><span
+                class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span
+                class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                    class="token attr-name">v-for</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>n in 24<span
+                    class="token punctuation">"</span></span> <span class="token attr-name">class</span><span
+                    class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+                    class="token punctuation">"</span>black q-ma-md<span class="token punctuation">"</span></span> <span
+                    class="token attr-name">:key</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>n<span
+                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span
+                        class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span
+                        class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+                        class="token punctuation">"</span>text-white<span class="token punctuation">"</span></span><span
+                        class="token punctuation">&gt;</span></span>{{n}}<span class="token tag"><span
+                class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                    class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                class="token punctuation">&gt;</span></span>
+        ```
+
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span
+                class="token punctuation">&gt;</span></span>Column<span class="token tag"><span class="token tag"><span
+                class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                class="token attr-name">class</span><span class="token attr-value"><span
+                class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>column<span
+                class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                    class="token attr-name">v-for</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>n in 10<span
+                    class="token punctuation">"</span></span> <span class="token attr-name">class</span><span
+                    class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+                    class="token punctuation">"</span>black q-ma-md<span class="token punctuation">"</span></span> <span
+                    class="token attr-name">:key</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>n<span
+                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span
+                        class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span
+                        class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+                        class="token punctuation">"</span>text-white<span class="token punctuation">"</span></span><span
+                        class="token punctuation">&gt;</span></span>{{n}}<span class="token tag"><span
+                class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                    class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                class="token punctuation">&gt;</span></span>
+
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span
+                class="token punctuation">&gt;</span></span>Zarovnání<span class="token tag"><span
+                class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span
+                class="token punctuation">&gt;</span></span>Horizontální zarovnání<span class="token tag"><span
+                class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span
+                class="token punctuation">&gt;</span></span>Justify start<span class="token tag"><span
+                class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                class="token attr-name">class</span><span class="token attr-value"><span
+                class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row justify-start bg-grey-3<span
+                class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                    class="token attr-name">v-for</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>n in 3<span
+                    class="token punctuation">"</span></span> <span class="token attr-name">class</span><span
+                    class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+                    class="token punctuation">"</span>black q-ma-md<span class="token punctuation">"</span></span> <span
+                    class="token attr-name">:key</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>n<span
+                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span
+                        class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span
+                        class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+                        class="token punctuation">"</span>text-white<span class="token punctuation">"</span></span><span
+                        class="token punctuation">&gt;</span></span>{{n}}<span class="token tag"><span
+                class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                    class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                class="token punctuation">&gt;</span></span>
+
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span
+                class="token punctuation">&gt;</span></span>Justify end<span class="token tag"><span
+                class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                class="token attr-name">class</span><span class="token attr-value"><span
+                class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row justify-end bg-grey-3<span
+                class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                    class="token attr-name">v-for</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>n in 3<span
+                    class="token punctuation">"</span></span> <span class="token attr-name">class</span><span
+                    class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+                    class="token punctuation">"</span>black q-ma-md<span class="token punctuation">"</span></span> <span
+                    class="token attr-name">:key</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>n<span
+                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span
+                        class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span
+                        class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+                        class="token punctuation">"</span>text-white<span class="token punctuation">"</span></span><span
+                        class="token punctuation">&gt;</span></span>{{n}}<span class="token tag"><span
+                class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                    class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                class="token punctuation">&gt;</span></span>
+
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span
+                class="token punctuation">&gt;</span></span>Justify center<span class="token tag"><span
+                class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                class="token attr-name">class</span><span class="token attr-value"><span
+                class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row justify-center bg-grey-3<span
+                class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                    class="token attr-name">v-for</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>n in 3<span
+                    class="token punctuation">"</span></span> <span class="token attr-name">class</span><span
+                    class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+                    class="token punctuation">"</span>black q-ma-md<span class="token punctuation">"</span></span> <span
+                    class="token attr-name">:key</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>n<span
+                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span
+                        class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span
+                        class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+                        class="token punctuation">"</span>text-white<span class="token punctuation">"</span></span><span
+                        class="token punctuation">&gt;</span></span>{{n}}<span class="token tag"><span
+                class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                    class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                class="token punctuation">&gt;</span></span>
+
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span
+                class="token punctuation">&gt;</span></span>Justify between<span class="token tag"><span
+                class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                class="token attr-name">class</span><span class="token attr-value"><span
+                class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row justify-between bg-grey-3<span
+                class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                    class="token attr-name">v-for</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>n in 3<span
+                    class="token punctuation">"</span></span> <span class="token attr-name">class</span><span
+                    class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+                    class="token punctuation">"</span>black q-ma-md<span class="token punctuation">"</span></span> <span
+                    class="token attr-name">:key</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>n<span
+                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span
+                        class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span
+                        class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+                        class="token punctuation">"</span>text-white<span class="token punctuation">"</span></span><span
+                        class="token punctuation">&gt;</span></span>{{n}}<span class="token tag"><span
+                class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                    class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                class="token punctuation">&gt;</span></span>
+
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span
+                class="token punctuation">&gt;</span></span>Justify around<span class="token tag"><span
+                class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                class="token attr-name">class</span><span class="token attr-value"><span
+                class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row justify-around bg-grey-3<span
+                class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                    class="token attr-name">v-for</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>n in 3<span
+                    class="token punctuation">"</span></span> <span class="token attr-name">class</span><span
+                    class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+                    class="token punctuation">"</span>black q-ma-md<span class="token punctuation">"</span></span> <span
+                    class="token attr-name">:key</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>n<span
+                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span
+                        class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span
+                        class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+                        class="token punctuation">"</span>text-white<span class="token punctuation">"</span></span><span
+                        class="token punctuation">&gt;</span></span>{{n}}<span class="token tag"><span
+                class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                    class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                class="token punctuation">&gt;</span></span>
+
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span
+                class="token punctuation">&gt;</span></span>Justify evenly<span class="token tag"><span
+                class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                class="token attr-name">class</span><span class="token attr-value"><span
+                class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row justify-evenly bg-grey-3<span
+                class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                    class="token attr-name">v-for</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>n in 3<span
+                    class="token punctuation">"</span></span> <span class="token attr-name">class</span><span
+                    class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+                    class="token punctuation">"</span>black q-ma-md<span class="token punctuation">"</span></span> <span
+                    class="token attr-name">:key</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>n<span
+                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span
+                        class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span
+                        class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+                        class="token punctuation">"</span>text-white<span class="token punctuation">"</span></span><span
+                        class="token punctuation">&gt;</span></span>{{n}}<span class="token tag"><span
+                class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                    class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                class="token punctuation">&gt;</span></span>
+
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span
+                class="token punctuation">&gt;</span></span>Vertikální zarovnání<span class="token tag"><span
+                class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span
+                class="token punctuation">&gt;</span></span>Items start<span class="token tag"><span
+                class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                class="token attr-name">class</span><span class="token attr-value"><span
+                class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row items-start bg-grey-3<span
+                class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                    class="token attr-name">v-for</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>n in 3<span
+                    class="token punctuation">"</span></span> <span class="token attr-name">:class</span><span
+                    class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+                    class="token punctuation">"</span>getClass(n)<span class="token punctuation">"</span></span> <span
+                    class="token attr-name">:key</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>n<span
+                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span
+                        class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span
+                        class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+                        class="token punctuation">"</span>text-white<span class="token punctuation">"</span></span><span
+                        class="token punctuation">&gt;</span></span>{{n}}<span class="token tag"><span
+                class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                    class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                class="token punctuation">&gt;</span></span>
+
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span
+                class="token punctuation">&gt;</span></span>Items end<span class="token tag"><span
+                class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                class="token attr-name">class</span><span class="token attr-value"><span
+                class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row items-end bg-grey-3<span
+                class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                    class="token attr-name">v-for</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>n in 3<span
+                    class="token punctuation">"</span></span> <span class="token attr-name">:class</span><span
+                    class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+                    class="token punctuation">"</span>getClass(n)<span class="token punctuation">"</span></span> <span
+                    class="token attr-name">:key</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>n<span
+                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span
+                        class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span
+                        class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+                        class="token punctuation">"</span>text-white<span class="token punctuation">"</span></span><span
+                        class="token punctuation">&gt;</span></span>{{n}}<span class="token tag"><span
+                class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                    class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                class="token punctuation">&gt;</span></span>
+
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span
+                class="token punctuation">&gt;</span></span>Items center<span class="token tag"><span class="token tag"><span
+                class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                class="token attr-name">class</span><span class="token attr-value"><span
+                class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row items-center bg-grey-3<span
+                class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                    class="token attr-name">v-for</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>n in 3<span
+                    class="token punctuation">"</span></span> <span class="token attr-name">:class</span><span
+                    class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+                    class="token punctuation">"</span>getClass(n)<span class="token punctuation">"</span></span> <span
+                    class="token attr-name">:key</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>n<span
+                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span
+                        class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span
+                        class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+                        class="token punctuation">"</span>text-white<span class="token punctuation">"</span></span><span
+                        class="token punctuation">&gt;</span></span>{{n}}<span class="token tag"><span
+                class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                    class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                class="token punctuation">&gt;</span></span>
+
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span
+                class="token punctuation">&gt;</span></span>Items stretch<span class="token tag"><span
+                class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                class="token attr-name">class</span><span class="token attr-value"><span
+                class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row items-stretch bg-grey-3<span
+                class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                    class="token attr-name">v-for</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>n in 3<span
+                    class="token punctuation">"</span></span> <span class="token attr-name">:class</span><span
+                    class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+                    class="token punctuation">"</span>getClass(n)<span class="token punctuation">"</span></span> <span
+                    class="token attr-name">:key</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>n<span
+                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span
+                        class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span
+                        class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+                        class="token punctuation">"</span>text-white<span class="token punctuation">"</span></span><span
+                        class="token punctuation">&gt;</span></span>{{n}}<span class="token tag"><span
+                class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                    class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                class="token punctuation">&gt;</span></span>
+
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span
+                class="token punctuation">&gt;</span></span>Items baseline<span class="token tag"><span
+                class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                class="token attr-name">class</span><span class="token attr-value"><span
+                class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row items-stretch bg-grey-3<span
+                class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                    class="token attr-name">v-for</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>n in 3<span
+                    class="token punctuation">"</span></span> <span class="token attr-name">:class</span><span
+                    class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+                    class="token punctuation">"</span>getClass(n)<span class="token punctuation">"</span></span> <span
+                    class="token attr-name">:key</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>n<span
+                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span
+                        class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span
+                        class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+                        class="token punctuation">"</span>text-white<span class="token punctuation">"</span></span><span
+                        class="token punctuation">&gt;</span></span>{{n}}<span class="token tag"><span
+                class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                    class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                class="token punctuation">&gt;</span></span>
+
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span
+                class="token punctuation">&gt;</span></span>Distribuce velikosti: grid system<span
+                class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span
+                class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                class="token attr-name">class</span><span class="token attr-value"><span
+                class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span
+                class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                    class="token attr-name">class</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span
+                    class="token punctuation">"</span>col-8 black<span class="token punctuation">"</span></span><span
+                    class="token punctuation">&gt;</span></span>two thirds<span class="token tag"><span
+                class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                    class="token attr-name">class</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-2 red<span
+                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>one sixth<span
+                class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                    class="token attr-name">class</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-auto green<span
+                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>auto size based on content and available space<span
+                class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                    class="token attr-name">class</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col black<span
+                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>fills remaining available space<span
+                class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                class="token punctuation">&gt;</span></span>
+
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                class="token attr-name">class</span><span class="token attr-value"><span
+                class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span
+                class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                    class="token attr-name">class</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col green<span
+                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>1<span
+                class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                    class="token attr-name">class</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col red<span
+                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>1<span
+                class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                    class="token attr-name">class</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col black<span
+                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>1<span
+                class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                class="token punctuation">&gt;</span></span>
+            <span class="token comment">&lt;!--
+               we have 3 children, so equivalent
+               to above would be to use `col-4`
+               on each of the children
+            --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                class="token punctuation">&gt;</span></span>
+
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                class="token attr-name">class</span><span class="token attr-value"><span
+                class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span
+                class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                    class="token attr-name">class</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span
+                    class="token punctuation">"</span>col-3 shadow<span class="token punctuation">"</span></span><span
+                    class="token punctuation">&gt;</span></span>1<span class="token tag"><span class="token tag"><span
+                class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                    class="token attr-name">class</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span
+                    class="token punctuation">"</span>col-6 pink<span class="token punctuation">"</span></span><span
+                    class="token punctuation">&gt;</span></span>2<span class="token tag"><span class="token tag"><span
+                class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                    class="token attr-name">class</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span
+                    class="token punctuation">"</span>col-3 shadow<span class="token punctuation">"</span></span><span
+                    class="token punctuation">&gt;</span></span>1<span class="token tag"><span class="token tag"><span
+                class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                class="token punctuation">&gt;</span></span>
+
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span
+                class="token punctuation">&gt;</span></span>Responzivní design<span class="token tag"><span
+                class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                class="token attr-name">class</span><span class="token attr-value"><span
+                class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span
+                class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                    class="token attr-name">class</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-xs-12 col-sm-6 col-md-4 shadow<span
+                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                col
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                    class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                    class="token attr-name">class</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-xs-12 col-sm-6 col-md-4 pink gt-md<span
+                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                col
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                    class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                    class="token attr-name">class</span><span class="token attr-value"><span
+                    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-xs-12 col-sm-6 col-md-4 shadow<span
+                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                col
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                    class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-page</span><span
+            class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span
+        class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span
+        class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+    <span class="token keyword">export</span> <span class="token keyword">default</span> <span
+                class="token punctuation">{</span>
+        name<span class="token operator">:</span> <span class="token string">"FlexBoxIntroPage"</span><span
+                class="token punctuation">,</span>
+        methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token function">getClass</span><span class="token punctuation">(</span><span
+                class="token parameter">n</span><span class="token punctuation">)</span> <span
+                class="token punctuation">{</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span
+                class="token operator">%</span> <span class="token number">3</span> <span
+                class="token operator">===</span> <span class="token number">0</span><span
+                class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token keyword">return</span> <span class="token string">"green q-ma-md"</span>
+                <span class="token punctuation">}</span> <span class="token keyword">else</span> <span
+                class="token keyword">if</span> <span class="token punctuation">(</span>n <span
+                class="token operator">%</span> <span class="token number">2</span> <span
+                class="token operator">===</span> <span class="token number">0</span><span
+                class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token keyword">return</span> <span class="token string">"red q-ma-md"</span>
+                <span class="token punctuation">}</span> <span class="token keyword">else</span>
+                    <span class="token keyword">return</span> <span class="token string">"black q-ma-md"</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span
+                class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span
+        class="token attr-name">scoped</span><span class="token punctuation">&gt;</span></span><span
+                class="token style"><span class="token language-css">
+    <span class="token selector">.black</span> <span class="token punctuation">{</span>
+        <span class="token property">background-color</span><span class="token punctuation">:</span> #1D1D1D<span
+                class="token punctuation">;</span>
+        <span class="token property">color</span><span class="token punctuation">:</span> white<span
+                class="token punctuation">;</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 100px<span
+                class="token punctuation">;</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> 100px<span
+                class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.green</span> <span class="token punctuation">{</span>
+        <span class="token property">background-color</span><span class="token punctuation">:</span> green<span
+                class="token punctuation">;</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 180px<span
+                class="token punctuation">;</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> 100px<span
+                class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.red</span> <span class="token punctuation">{</span>
+        <span class="token property">background-color</span><span class="token punctuation">:</span> red<span
+                class="token punctuation">;</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 50px<span
+                class="token punctuation">;</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> 100px<span
+                class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.shadow</span> <span class="token punctuation">{</span>
+        <span class="token property">background-color</span><span class="token punctuation">:</span> lightgray<span
+                class="token punctuation">;</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 100px<span
+                class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.pink</span> <span class="token punctuation">{</span>
+        <span class="token property">background-color</span><span class="token punctuation">:</span> lightpink<span
+                class="token punctuation">;</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 100px
+    <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span
+                class="token punctuation">&lt;/</span>style</span><span
+                class="token punctuation">&gt;</span></span></code></pre>
+    <h3 class="atx" id="layout"><a href="https://quasar.dev/layout/layout">Layout</a></h3>
+    <p>Layout je vue componenta, která řeší rozvržení layoutu. Pro návrh se
+        používá <a href="https://quasar.dev/layout-builder">Layout Builder</a> , kde si člověk může nakliklat jeho
+        vzhled a chování.</p>
+    <p>Příklad layoutu:
+        <code>/src/layouts/TestLayout</code></p>
+    <pre><code class="fenced-code-block language-vue">&lt;template&gt;
+  &lt;q-layout view="hHh lpR fFf"&gt;
+
+    &lt;q-header reveal elevated class="bg-primary text-white" height-hint="98"&gt;
+      &lt;q-toolbar&gt;
+        &lt;q-btn dense flat round icon="menu" @click="toggleLeftDrawer"/&gt;
+
+        &lt;q-toolbar-title&gt;
+          &lt;q-avatar&gt;
+            &lt;img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg"&gt;
+          &lt;/q-avatar&gt;
+          Title
+        &lt;/q-toolbar-title&gt;
+
+        &lt;q-btn dense flat round icon="menu" @click="toggleRightDrawer"/&gt;
+      &lt;/q-toolbar&gt;
+
+      &lt;q-tabs align="left"&gt;
+        &lt;q-route-tab to="/page1" label="Page One"/&gt;
+        &lt;q-route-tab to="/page2" label="Page Two"/&gt;
+        &lt;q-route-tab to="/page3" label="Page Three"/&gt;
+      &lt;/q-tabs&gt;
+    &lt;/q-header&gt;
+
+    &lt;q-drawer show-if-above v-model="leftDrawerOpen" side="left" bordered&gt;
+      &lt;!-- drawer content --&gt;
+    &lt;/q-drawer&gt;
+
+    &lt;q-drawer show-if-above v-model="rightDrawerOpen" side="right" bordered&gt;
+      &lt;!-- drawer content --&gt;
+    &lt;/q-drawer&gt;
+
+    &lt;q-page-container&gt;
+      &lt;router-view/&gt;
+    &lt;/q-page-container&gt;
+
+    &lt;q-footer reveal elevated class="bg-grey-8 text-white"&gt;
+      &lt;q-toolbar&gt;
+        &lt;q-toolbar-title&gt;
+          &lt;q-avatar&gt;
+            &lt;img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg"&gt;
+          &lt;/q-avatar&gt;
+          &lt;div&gt;Title&lt;/div&gt;
+        &lt;/q-toolbar-title&gt;
+      &lt;/q-toolbar&gt;
+    &lt;/q-footer&gt;
+
+  &lt;/q-layout&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+import {ref} from 'vue'
+
+export default {
+  setup() {
+    const leftDrawerOpen = ref(false)
+    const rightDrawerOpen = ref(false)
+
+    return {
+      leftDrawerOpen,
+      toggleLeftDrawer() {
+        leftDrawerOpen.value = !leftDrawerOpen.value
+      },
+
+      rightDrawerOpen,
+      toggleRightDrawer() {
+        rightDrawerOpen.value = !rightDrawerOpen.value
+      }
+    }
+  }
+}
+&lt;/script&gt;</code></pre>
+    <h3 class="atx" id="layout-header-and-footer"><a href="https://quasar.dev/layout/header-and-footer">Layout Header
+        and Footer</a></h3>
+    <p>Viz dokumentace, nastavuje se jen vzhled a chování.</p>
+    <h2 class="atx" id="komponenty">Komponenty</h2>
+    <p>Quasar knihovna obsahuje nesčetně UI komponent, které můžete použít a postavit si svojí webovou stránku/aplikaci
+        jako
+        LEGO. Každá komponenta má svojí stránku, kde je mnoho příkladů a také API dokumentace. Příklad si ukážeme na
+        jednoduchém
+        tlačítku a input boxu. Do input boxu napíšeme text a po stisknutí tlačítka se nám přepíše na velká písmena.
+        Nebude nás
+        až tolik zajímat logika jako stylování.</p>
+    <p><code>ComponentsPage.vue</code></p>
+    <pre><code class="fenced-code-block language-vue">&lt;template&gt;
+    &lt;q-page class="q-pa-xl"&gt;
+        &lt;div class="row justify-center items-end"&gt;
+            &lt;div class="q-pa-sm col-3"&gt;
+                &lt;q-input v-model="text" label="Zadej text..."/&gt;
+            &lt;/div&gt;
+            &lt;div class="q-pa-sm col-1" @click="submit"&gt;
+                &lt;q-btn :loading="submitting" label="Submit" glossy/&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="row justify-center"&gt;
+            &lt;q-card class="my-card"&gt;
+                &lt;q-card-section&gt;
+                    {{ cardText }}
+                &lt;/q-card-section&gt;
+            &lt;/q-card&gt;
+        &lt;/div&gt;
+    &lt;/q-page&gt;
+&lt;/template&gt;
+
+
+&lt;script&gt;
+    import {ref} from "vue";
+
+    export default {
+        name: "ComponentPage",
+        setup() {
+            let text = ref('')
+            let cardText = ref('')
+
+            const submitting = ref(false)
+
+            function submit() {
+                submitting.value = true
+                setTimeout(() =&gt; {
+                    cardText.value = text.value
+                    submitting.value = false
+                }, 3000)
+            }
+
+            return {
+                text,
+                cardText,
+                submitting,
+                submit
+            }
+        },
+    }
+&lt;/script&gt;
+
+&lt;style scoped&gt;
+
+&lt;/style&gt;</code></pre>
+</article>
+</body>
+</html>
