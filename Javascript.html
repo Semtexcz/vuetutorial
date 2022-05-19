@@ -1,0 +1,2822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style>
+        @font-face {
+            font-family: octicons-link;
+            src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAZwABAAAAAACFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEU0lHAAAGaAAAAAgAAAAIAAAAAUdTVUIAAAZcAAAACgAAAAoAAQAAT1MvMgAAAyQAAABJAAAAYFYEU3RjbWFwAAADcAAAAEUAAACAAJThvmN2dCAAAATkAAAABAAAAAQAAAAAZnBnbQAAA7gAAACyAAABCUM+8IhnYXNwAAAGTAAAABAAAAAQABoAI2dseWYAAAFsAAABPAAAAZwcEq9taGVhZAAAAsgAAAA0AAAANgh4a91oaGVhAAADCAAAABoAAAAkCA8DRGhtdHgAAAL8AAAADAAAAAwGAACfbG9jYQAAAsAAAAAIAAAACABiATBtYXhwAAACqAAAABgAAAAgAA8ASm5hbWUAAAToAAABQgAAAlXu73sOcG9zdAAABiwAAAAeAAAAME3QpOBwcmVwAAAEbAAAAHYAAAB/aFGpk3jaTY6xa8JAGMW/O62BDi0tJLYQincXEypYIiGJjSgHniQ6umTsUEyLm5BV6NDBP8Tpts6F0v+k/0an2i+itHDw3v2+9+DBKTzsJNnWJNTgHEy4BgG3EMI9DCEDOGEXzDADU5hBKMIgNPZqoD3SilVaXZCER3/I7AtxEJLtzzuZfI+VVkprxTlXShWKb3TBecG11rwoNlmmn1P2WYcJczl32etSpKnziC7lQyWe1smVPy/Lt7Kc+0vWY/gAgIIEqAN9we0pwKXreiMasxvabDQMM4riO+qxM2ogwDGOZTXxwxDiycQIcoYFBLj5K3EIaSctAq2kTYiw+ymhce7vwM9jSqO8JyVd5RH9gyTt2+J/yUmYlIR0s04n6+7Vm1ozezUeLEaUjhaDSuXHwVRgvLJn1tQ7xiuVv/ocTRF42mNgZGBgYGbwZOBiAAFGJBIMAAizAFoAAABiAGIAznjaY2BkYGAA4in8zwXi+W2+MjCzMIDApSwvXzC97Z4Ig8N/BxYGZgcgl52BCSQKAA3jCV8CAABfAAAAAAQAAEB42mNgZGBg4f3vACQZQABIMjKgAmYAKEgBXgAAeNpjYGY6wTiBgZWBg2kmUxoDA4MPhGZMYzBi1AHygVLYQUCaawqDA4PChxhmh/8ODDEsvAwHgMKMIDnGL0x7gJQCAwMAJd4MFwAAAHjaY2BgYGaA4DAGRgYQkAHyGMF8NgYrIM3JIAGVYYDT+AEjAwuDFpBmA9KMDEwMCh9i/v8H8sH0/4dQc1iAmAkALaUKLgAAAHjaTY9LDsIgEIbtgqHUPpDi3gPoBVyRTmTddOmqTXThEXqrob2gQ1FjwpDvfwCBdmdXC5AVKFu3e5MfNFJ29KTQT48Ob9/lqYwOGZxeUelN2U2R6+cArgtCJpauW7UQBqnFkUsjAY/kOU1cP+DAgvxwn1chZDwUbd6CFimGXwzwF6tPbFIcjEl+vvmM/byA48e6tWrKArm4ZJlCbdsrxksL1AwWn/yBSJKpYbq8AXaaTb8AAHja28jAwOC00ZrBeQNDQOWO//sdBBgYGRiYWYAEELEwMTE4uzo5Zzo5b2BxdnFOcALxNjA6b2ByTswC8jYwg0VlNuoCTWAMqNzMzsoK1rEhNqByEyerg5PMJlYuVueETKcd/89uBpnpvIEVomeHLoMsAAe1Id4AAAAAAAB42oWQT07CQBTGv0JBhagk7HQzKxca2sJCE1hDt4QF+9JOS0nbaaYDCQfwCJ7Au3AHj+LO13FMmm6cl7785vven0kBjHCBhfpYuNa5Ph1c0e2Xu3jEvWG7UdPDLZ4N92nOm+EBXuAbHmIMSRMs+4aUEd4Nd3CHD8NdvOLTsA2GL8M9PODbcL+hD7C1xoaHeLJSEao0FEW14ckxC+TU8TxvsY6X0eLPmRhry2WVioLpkrbp84LLQPGI7c6sOiUzpWIWS5GzlSgUzzLBSikOPFTOXqly7rqx0Z1Q5BAIoZBSFihQYQOOBEdkCOgXTOHA07HAGjGWiIjaPZNW13/+lm6S9FT7rLHFJ6fQbkATOG1j2OFMucKJJsxIVfQORl+9Jyda6Sl1dUYhSCm1dyClfoeDve4qMYdLEbfqHf3O/AdDumsjAAB42mNgYoAAZQYjBmyAGYQZmdhL8zLdDEydARfoAqIAAAABAAMABwAKABMAB///AA8AAQAAAAAAAAAAAAAAAAABAAAAAA==) format('woff');
+        }
+
+        .markdown-body .octicon {
+            display: inline-block;
+            fill: currentColor;
+            vertical-align: text-bottom;
+        }
+
+        .markdown-body .anchor {
+            float: left;
+            line-height: 1;
+            margin-left: -20px;
+            padding-right: 4px;
+        }
+
+        .markdown-body .anchor:focus {
+            outline: none;
+        }
+
+        .markdown-body h1 .octicon-link,
+        .markdown-body h2 .octicon-link,
+        .markdown-body h3 .octicon-link,
+        .markdown-body h4 .octicon-link,
+        .markdown-body h5 .octicon-link,
+        .markdown-body h6 .octicon-link {
+            color: #1b1f23;
+            vertical-align: middle;
+            visibility: hidden;
+        }
+
+        .markdown-body h1:hover .anchor,
+        .markdown-body h2:hover .anchor,
+        .markdown-body h3:hover .anchor,
+        .markdown-body h4:hover .anchor,
+        .markdown-body h5:hover .anchor,
+        .markdown-body h6:hover .anchor {
+            text-decoration: none;
+        }
+
+        .markdown-body h1:hover .anchor .octicon-link,
+        .markdown-body h2:hover .anchor .octicon-link,
+        .markdown-body h3:hover .anchor .octicon-link,
+        .markdown-body h4:hover .anchor .octicon-link,
+        .markdown-body h5:hover .anchor .octicon-link,
+        .markdown-body h6:hover .anchor .octicon-link {
+            visibility: visible;
+        }
+
+        .markdown-body {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            color: #24292e;
+            line-height: 1.5;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+            font-size: 16px;
+            line-height: 1.5;
+            word-wrap: break-word;
+        }
+
+        .markdown-body .pl-c {
+            color: #6a737d;
+        }
+
+        .markdown-body .pl-c1,
+        .markdown-body .pl-s .pl-v {
+            color: #005cc5;
+        }
+
+        .markdown-body .pl-e,
+        .markdown-body .pl-en {
+            color: #6f42c1;
+        }
+
+        .markdown-body .pl-s .pl-s1,
+        .markdown-body .pl-smi {
+            color: #24292e;
+        }
+
+        .markdown-body .pl-ent {
+            color: #22863a;
+        }
+
+        .markdown-body .pl-k {
+            color: #d73a49;
+        }
+
+        .markdown-body .pl-pds,
+        .markdown-body .pl-s,
+        .markdown-body .pl-s .pl-pse .pl-s1,
+        .markdown-body .pl-sr,
+        .markdown-body .pl-sr .pl-cce,
+        .markdown-body .pl-sr .pl-sra,
+        .markdown-body .pl-sr .pl-sre {
+            color: #032f62;
+        }
+
+        .markdown-body .pl-smw,
+        .markdown-body .pl-v {
+            color: #e36209;
+        }
+
+        .markdown-body .pl-bu {
+            color: #b31d28;
+        }
+
+        .markdown-body .pl-ii {
+            background-color: #b31d28;
+            color: #fafbfc;
+        }
+
+        .markdown-body .pl-c2 {
+            background-color: #d73a49;
+            color: #fafbfc;
+        }
+
+        .markdown-body .pl-c2:before {
+            content: "^M";
+        }
+
+        .markdown-body .pl-sr .pl-cce {
+            color: #22863a;
+            font-weight: 700;
+        }
+
+        .markdown-body .pl-ml {
+            color: #735c0f;
+        }
+
+        .markdown-body .pl-mh,
+        .markdown-body .pl-mh .pl-en,
+        .markdown-body .pl-ms {
+            color: #005cc5;
+            font-weight: 700;
+        }
+
+        .markdown-body .pl-mi {
+            color: #24292e;
+            font-style: italic;
+        }
+
+        .markdown-body .pl-mb {
+            color: #24292e;
+            font-weight: 700;
+        }
+
+        .markdown-body .pl-md {
+            background-color: #ffeef0;
+            color: #b31d28;
+        }
+
+        .markdown-body .pl-mi1 {
+            background-color: #f0fff4;
+            color: #22863a;
+        }
+
+        .markdown-body .pl-mc {
+            background-color: #ffebda;
+            color: #e36209;
+        }
+
+        .markdown-body .pl-mi2 {
+            background-color: #005cc5;
+            color: #f6f8fa;
+        }
+
+        .markdown-body .pl-mdr {
+            color: #6f42c1;
+            font-weight: 700;
+        }
+
+        .markdown-body .pl-ba {
+            color: #586069;
+        }
+
+        .markdown-body .pl-sg {
+            color: #959da5;
+        }
+
+        .markdown-body .pl-corl {
+            color: #032f62;
+            text-decoration: underline;
+        }
+
+        .markdown-body details {
+            display: block;
+        }
+
+        .markdown-body summary {
+            display: list-item;
+        }
+
+        .markdown-body a {
+            background-color: transparent;
+        }
+
+        .markdown-body a:active,
+        .markdown-body a:hover {
+            outline-width: 0;
+        }
+
+        .markdown-body strong {
+            font-weight: inherit;
+            font-weight: bolder;
+        }
+
+        .markdown-body h1 {
+            font-size: 2em;
+            margin: .67em 0;
+        }
+
+        .markdown-body img {
+            border-style: none;
+        }
+
+        .markdown-body code,
+        .markdown-body kbd,
+        .markdown-body pre {
+            font-family: monospace, monospace;
+            font-size: 1em;
+        }
+
+        .markdown-body hr {
+            box-sizing: content-box;
+            height: 0;
+            overflow: visible;
+        }
+
+        .markdown-body input {
+            font: inherit;
+            margin: 0;
+        }
+
+        .markdown-body input {
+            overflow: visible;
+        }
+
+        .markdown-body [type=checkbox] {
+            box-sizing: border-box;
+            padding: 0;
+        }
+
+        .markdown-body * {
+            box-sizing: border-box;
+        }
+
+        .markdown-body input {
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+        }
+
+        .markdown-body a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+
+        .markdown-body a:hover {
+            text-decoration: underline;
+        }
+
+        .markdown-body strong {
+            font-weight: 600;
+        }
+
+        .markdown-body hr {
+            background: transparent;
+            border: 0;
+            border-bottom: 1px solid #dfe2e5;
+            height: 0;
+            margin: 15px 0;
+            overflow: hidden;
+        }
+
+        .markdown-body hr:before {
+            content: "";
+            display: table;
+        }
+
+        .markdown-body hr:after {
+            clear: both;
+            content: "";
+            display: table;
+        }
+
+        .markdown-body table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .markdown-body td,
+        .markdown-body th {
+            padding: 0;
+        }
+
+        .markdown-body details summary {
+            cursor: pointer;
+        }
+
+        .markdown-body h1,
+        .markdown-body h2,
+        .markdown-body h3,
+        .markdown-body h4,
+        .markdown-body h5,
+        .markdown-body h6 {
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        .markdown-body h1 {
+            font-size: 32px;
+        }
+
+        .markdown-body h1,
+        .markdown-body h2 {
+            font-weight: 600;
+        }
+
+        .markdown-body h2 {
+            font-size: 24px;
+        }
+
+        .markdown-body h3 {
+            font-size: 20px;
+        }
+
+        .markdown-body h3,
+        .markdown-body h4 {
+            font-weight: 600;
+        }
+
+        .markdown-body h4 {
+            font-size: 16px;
+        }
+
+        .markdown-body h5 {
+            font-size: 14px;
+        }
+
+        .markdown-body h5,
+        .markdown-body h6 {
+            font-weight: 600;
+        }
+
+        .markdown-body h6 {
+            font-size: 12px;
+        }
+
+        .markdown-body p {
+            margin-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .markdown-body blockquote {
+            margin: 0;
+        }
+
+        .markdown-body ol,
+        .markdown-body ul {
+            margin-bottom: 0;
+            margin-top: 0;
+            padding-left: 0;
+        }
+
+        .markdown-body ol ol,
+        .markdown-body ul ol {
+            list-style-type: lower-roman;
+        }
+
+        .markdown-body ol ol ol,
+        .markdown-body ol ul ol,
+        .markdown-body ul ol ol,
+        .markdown-body ul ul ol {
+            list-style-type: lower-alpha;
+        }
+
+        .markdown-body dd {
+            margin-left: 0;
+        }
+
+        .markdown-body code,
+        .markdown-body pre {
+            font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+            font-size: 12px;
+        }
+
+        .markdown-body pre {
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        .markdown-body input::-webkit-inner-spin-button,
+        .markdown-body input::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            appearance: none;
+            margin: 0;
+        }
+
+        .markdown-body .border {
+            border: 1px solid #e1e4e8 !important;
+        }
+
+        .markdown-body .border-0 {
+            border: 0 !important;
+        }
+
+        .markdown-body .border-bottom {
+            border-bottom: 1px solid #e1e4e8 !important;
+        }
+
+        .markdown-body .rounded-1 {
+            border-radius: 3px !important;
+        }
+
+        .markdown-body .bg-white {
+            background-color: #fff !important;
+        }
+
+        .markdown-body .bg-gray-light {
+            background-color: #fafbfc !important;
+        }
+
+        .markdown-body .text-gray-light {
+            color: #6a737d !important;
+        }
+
+        .markdown-body .mb-0 {
+            margin-bottom: 0 !important;
+        }
+
+        .markdown-body .my-2 {
+            margin-bottom: 8px !important;
+            margin-top: 8px !important;
+        }
+
+        .markdown-body .pl-0 {
+            padding-left: 0 !important;
+        }
+
+        .markdown-body .py-0 {
+            padding-bottom: 0 !important;
+            padding-top: 0 !important;
+        }
+
+        .markdown-body .pl-1 {
+            padding-left: 4px !important;
+        }
+
+        .markdown-body .pl-2 {
+            padding-left: 8px !important;
+        }
+
+        .markdown-body .py-2 {
+            padding-bottom: 8px !important;
+            padding-top: 8px !important;
+        }
+
+        .markdown-body .pl-3,
+        .markdown-body .px-3 {
+            padding-left: 16px !important;
+        }
+
+        .markdown-body .px-3 {
+            padding-right: 16px !important;
+        }
+
+        .markdown-body .pl-4 {
+            padding-left: 24px !important;
+        }
+
+        .markdown-body .pl-5 {
+            padding-left: 32px !important;
+        }
+
+        .markdown-body .pl-6 {
+            padding-left: 40px !important;
+        }
+
+        .markdown-body .f6 {
+            font-size: 12px !important;
+        }
+
+        .markdown-body .lh-condensed {
+            line-height: 1.25 !important;
+        }
+
+        .markdown-body .text-bold {
+            font-weight: 600 !important;
+        }
+
+        .markdown-body:before {
+            content: "";
+            display: table;
+        }
+
+        .markdown-body:after {
+            clear: both;
+            content: "";
+            display: table;
+        }
+
+        .markdown-body > :first-child {
+            margin-top: 0 !important;
+        }
+
+        .markdown-body > :last-child {
+            margin-bottom: 0 !important;
+        }
+
+        .markdown-body a:not([href]) {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .markdown-body blockquote,
+        .markdown-body dl,
+        .markdown-body ol,
+        .markdown-body p,
+        .markdown-body pre,
+        .markdown-body table,
+        .markdown-body ul {
+            margin-bottom: 16px;
+            margin-top: 0;
+        }
+
+        .markdown-body hr {
+            background-color: #e1e4e8;
+            border: 0;
+            height: .25em;
+            margin: 24px 0;
+            padding: 0;
+        }
+
+        .markdown-body blockquote {
+            border-left: .25em solid #dfe2e5;
+            color: #6a737d;
+            padding: 0 1em;
+        }
+
+        .markdown-body blockquote > :first-child {
+            margin-top: 0;
+        }
+
+        .markdown-body blockquote > :last-child {
+            margin-bottom: 0;
+        }
+
+        .markdown-body kbd {
+            background-color: #fafbfc;
+            border: 1px solid #c6cbd1;
+            border-bottom-color: #959da5;
+            border-radius: 3px;
+            box-shadow: inset 0 -1px 0 #959da5;
+            color: #444d56;
+            display: inline-block;
+            font-size: 11px;
+            line-height: 10px;
+            padding: 3px 5px;
+            vertical-align: middle;
+        }
+
+        .markdown-body h1,
+        .markdown-body h2,
+        .markdown-body h3,
+        .markdown-body h4,
+        .markdown-body h5,
+        .markdown-body h6 {
+            font-weight: 600;
+            line-height: 1.25;
+            margin-bottom: 16px;
+            margin-top: 24px;
+        }
+
+        .markdown-body h1 {
+            font-size: 2em;
+        }
+
+        .markdown-body h1,
+        .markdown-body h2 {
+            border-bottom: 1px solid #eaecef;
+            padding-bottom: .3em;
+        }
+
+        .markdown-body h2 {
+            font-size: 1.5em;
+        }
+
+        .markdown-body h3 {
+            font-size: 1.25em;
+        }
+
+        .markdown-body h4 {
+            font-size: 1em;
+        }
+
+        .markdown-body h5 {
+            font-size: .875em;
+        }
+
+        .markdown-body h6 {
+            color: #6a737d;
+            font-size: .85em;
+        }
+
+        .markdown-body ol,
+        .markdown-body ul {
+            padding-left: 2em;
+        }
+
+        .markdown-body ol ol,
+        .markdown-body ol ul,
+        .markdown-body ul ol,
+        .markdown-body ul ul {
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        .markdown-body li {
+            word-wrap: break-all;
+        }
+
+        .markdown-body li > p {
+            margin-top: 16px;
+        }
+
+        .markdown-body li + li {
+            margin-top: .25em;
+        }
+
+        .markdown-body dl {
+            padding: 0;
+        }
+
+        .markdown-body dl dt {
+            font-size: 1em;
+            font-style: italic;
+            font-weight: 600;
+            margin-top: 16px;
+            padding: 0;
+        }
+
+        .markdown-body dl dd {
+            margin-bottom: 16px;
+            padding: 0 16px;
+        }
+
+        .markdown-body table {
+            display: block;
+            overflow: auto;
+            width: 100%;
+        }
+
+        .markdown-body table th {
+            font-weight: 600;
+        }
+
+        .markdown-body table td,
+        .markdown-body table th {
+            border: 1px solid #dfe2e5;
+            padding: 6px 13px;
+        }
+
+        .markdown-body table tr {
+            background-color: #fff;
+            border-top: 1px solid #c6cbd1;
+        }
+
+        .markdown-body table tr:nth-child(2n) {
+            background-color: #f6f8fa;
+        }
+
+        .markdown-body img {
+            background-color: #fff;
+            box-sizing: content-box;
+            max-width: 100%;
+        }
+
+        .markdown-body img[align=right] {
+            padding-left: 20px;
+        }
+
+        .markdown-body img[align=left] {
+            padding-right: 20px;
+        }
+
+        .markdown-body code {
+            background-color: rgba(27, 31, 35, .05);
+            border-radius: 3px;
+            font-size: 85%;
+            margin: 0;
+            padding: .2em .4em;
+        }
+
+        .markdown-body pre {
+            word-wrap: normal;
+        }
+
+        .markdown-body pre > code {
+            background: transparent;
+            border: 0;
+            font-size: 100%;
+            margin: 0;
+            padding: 0;
+            white-space: pre;
+            word-break: normal;
+        }
+
+        .markdown-body .highlight {
+            margin-bottom: 16px;
+        }
+
+        .markdown-body .highlight pre {
+            margin-bottom: 0;
+            word-break: normal;
+        }
+
+        .markdown-body .highlight pre,
+        .markdown-body pre {
+            background-color: #f6f8fa;
+            border-radius: 3px;
+            font-size: 85%;
+            line-height: 1.45;
+            overflow: auto;
+            padding: 16px;
+        }
+
+        .markdown-body pre code {
+            background-color: transparent;
+            border: 0;
+            display: inline;
+            line-height: inherit;
+            margin: 0;
+            max-width: auto;
+            overflow: visible;
+            padding: 0;
+            word-wrap: normal;
+        }
+
+        .markdown-body .commit-tease-sha {
+            color: #444d56;
+            display: inline-block;
+            font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+            font-size: 90%;
+        }
+
+        .markdown-body .blob-wrapper {
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+
+        .markdown-body .blob-wrapper-embedded {
+            max-height: 240px;
+            overflow-y: auto;
+        }
+
+        .markdown-body .blob-num {
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -webkit-user-select: none;
+            color: rgba(27, 31, 35, .3);
+            cursor: pointer;
+            font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+            font-size: 12px;
+            line-height: 20px;
+            min-width: 50px;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: right;
+            user-select: none;
+            vertical-align: top;
+            white-space: nowrap;
+            width: 1%;
+        }
+
+        .markdown-body .blob-num:hover {
+            color: rgba(27, 31, 35, .6);
+        }
+
+        .markdown-body .blob-num:before {
+            content: attr(data-line-number);
+        }
+
+        .markdown-body .blob-code {
+            line-height: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            position: relative;
+            vertical-align: top;
+        }
+
+        .markdown-body .blob-code-inner {
+            color: #24292e;
+            font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+            font-size: 12px;
+            overflow: visible;
+            white-space: pre;
+            word-wrap: normal;
+        }
+
+        .markdown-body .pl-token.active,
+        .markdown-body .pl-token:hover {
+            background: #ffea7f;
+            cursor: pointer;
+        }
+
+        .markdown-body kbd {
+            background-color: #fafbfc;
+            border: 1px solid #d1d5da;
+            border-bottom-color: #c6cbd1;
+            border-radius: 3px;
+            box-shadow: inset 0 -1px 0 #c6cbd1;
+            color: #444d56;
+            display: inline-block;
+            font: 11px SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+            line-height: 10px;
+            padding: 3px 5px;
+            vertical-align: middle;
+        }
+
+        .markdown-body :checked + .radio-label {
+            border-color: #0366d6;
+            position: relative;
+            z-index: 1;
+        }
+
+        .markdown-body .tab-size[data-tab-size="1"] {
+            -moz-tab-size: 1;
+            tab-size: 1;
+        }
+
+        .markdown-body .tab-size[data-tab-size="2"] {
+            -moz-tab-size: 2;
+            tab-size: 2;
+        }
+
+        .markdown-body .tab-size[data-tab-size="3"] {
+            -moz-tab-size: 3;
+            tab-size: 3;
+        }
+
+        .markdown-body .tab-size[data-tab-size="4"] {
+            -moz-tab-size: 4;
+            tab-size: 4;
+        }
+
+        .markdown-body .tab-size[data-tab-size="5"] {
+            -moz-tab-size: 5;
+            tab-size: 5;
+        }
+
+        .markdown-body .tab-size[data-tab-size="6"] {
+            -moz-tab-size: 6;
+            tab-size: 6;
+        }
+
+        .markdown-body .tab-size[data-tab-size="7"] {
+            -moz-tab-size: 7;
+            tab-size: 7;
+        }
+
+        .markdown-body .tab-size[data-tab-size="8"] {
+            -moz-tab-size: 8;
+            tab-size: 8;
+        }
+
+        .markdown-body .tab-size[data-tab-size="9"] {
+            -moz-tab-size: 9;
+            tab-size: 9;
+        }
+
+        .markdown-body .tab-size[data-tab-size="10"] {
+            -moz-tab-size: 10;
+            tab-size: 10;
+        }
+
+        .markdown-body .tab-size[data-tab-size="11"] {
+            -moz-tab-size: 11;
+            tab-size: 11;
+        }
+
+        .markdown-body .tab-size[data-tab-size="12"] {
+            -moz-tab-size: 12;
+            tab-size: 12;
+        }
+
+        .markdown-body .task-list-item {
+            list-style-type: none;
+        }
+
+        .markdown-body .task-list-item + .task-list-item {
+            margin-top: 3px;
+        }
+
+        .markdown-body .task-list-item input {
+            margin: 0 .2em .25em -1.6em;
+            vertical-align: middle;
+        }
+
+        .markdown-body hr {
+            border-bottom-color: #eee;
+        }
+
+        .markdown-body .pl-0 {
+            padding-left: 0 !important;
+        }
+
+        .markdown-body .pl-1 {
+            padding-left: 4px !important;
+        }
+
+        .markdown-body .pl-2 {
+            padding-left: 8px !important;
+        }
+
+        .markdown-body .pl-3 {
+            padding-left: 16px !important;
+        }
+
+        .markdown-body .pl-4 {
+            padding-left: 24px !important;
+        }
+
+        .markdown-body .pl-5 {
+            padding-left: 32px !important;
+        }
+
+        .markdown-body .pl-6 {
+            padding-left: 40px !important;
+        }
+
+        .markdown-body .pl-7 {
+            padding-left: 48px !important;
+        }
+
+        .markdown-body .pl-8 {
+            padding-left: 64px !important;
+        }
+
+        .markdown-body .pl-9 {
+            padding-left: 80px !important;
+        }
+
+        .markdown-body .pl-10 {
+            padding-left: 96px !important;
+        }
+
+        .markdown-body .pl-11 {
+            padding-left: 112px !important;
+        }
+
+        .markdown-body .pl-12 {
+            padding-left: 128px !important;
+        }
+
+    </style>
+    <style>
+        /**
+       * prism.js default theme for JavaScript, CSS and HTML
+       * Based on dabblet (http://dabblet.com)
+       * @author Lea Verou
+       */
+
+        code[class*="language-"],
+        pre[class*="language-"] {
+            color: black;
+            background: none;
+            text-shadow: 0 1px white;
+            font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+            font-size: 1em;
+            text-align: left;
+            white-space: pre;
+            word-spacing: normal;
+            word-break: normal;
+            word-wrap: normal;
+            line-height: 1.5;
+
+            -moz-tab-size: 4;
+            -o-tab-size: 4;
+            tab-size: 4;
+
+            -webkit-hyphens: none;
+            -moz-hyphens: none;
+            -ms-hyphens: none;
+            hyphens: none;
+        }
+
+        pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+        code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+            text-shadow: none;
+            background: #b3d4fc;
+        }
+
+        pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+        code[class*="language-"]::selection, code[class*="language-"] ::selection {
+            text-shadow: none;
+            background: #b3d4fc;
+        }
+
+        @media print {
+            code[class*="language-"],
+            pre[class*="language-"] {
+                text-shadow: none;
+            }
+        }
+
+        /* Code blocks */
+        pre[class*="language-"] {
+            padding: 1em;
+            margin: .5em 0;
+            overflow: auto;
+        }
+
+        :not(pre) > code[class*="language-"],
+        pre[class*="language-"] {
+            background: #f5f2f0;
+        }
+
+        /* Inline code */
+        :not(pre) > code[class*="language-"] {
+            padding: .1em;
+            border-radius: .3em;
+            white-space: normal;
+        }
+
+        .token.comment,
+        .token.prolog,
+        .token.doctype,
+        .token.cdata {
+            color: slategray;
+        }
+
+        .token.punctuation {
+            color: #999;
+        }
+
+        .token.namespace {
+            opacity: .7;
+        }
+
+        .token.property,
+        .token.tag,
+        .token.boolean,
+        .token.number,
+        .token.constant,
+        .token.symbol,
+        .token.deleted {
+            color: #905;
+        }
+
+        .token.selector,
+        .token.attr-name,
+        .token.string,
+        .token.char,
+        .token.builtin,
+        .token.inserted {
+            color: #690;
+        }
+
+        .token.operator,
+        .token.entity,
+        .token.url,
+        .language-css .token.string,
+        .style .token.string {
+            color: #9a6e3a;
+            /* This background color was intended by the author of this theme. */
+            background: hsla(0, 0%, 100%, .5);
+        }
+
+        .token.atrule,
+        .token.attr-value,
+        .token.keyword {
+            color: #07a;
+        }
+
+        .token.function,
+        .token.class-name {
+            color: #DD4A68;
+        }
+
+        .token.regex,
+        .token.important,
+        .token.variable {
+            color: #e90;
+        }
+
+        .token.important,
+        .token.bold {
+            font-weight: bold;
+        }
+
+        .token.italic {
+            font-style: italic;
+        }
+
+        .token.entity {
+            cursor: help;
+        }
+
+    </style>
+    <style>
+
+    </style>
+    <style>
+        .markdown-body {
+            font-family: -apple-system, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        @media not print {
+            .markdown-body {
+                padding: 45px;
+            }
+
+            @media (max-width: 767px) {
+                .markdown-body {
+                    padding: 15px;
+                }
+            }
+        }
+
+        .hf-container {
+            color: #24292e;
+            line-height: 1.3;
+        }
+
+        .markdown-body .highlight pre,
+        .markdown-body pre {
+            white-space: pre-wrap;
+        }
+
+        .markdown-body table {
+            display: table;
+        }
+
+        .markdown-body img[data-align="center"] {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .markdown-body img[data-align="right"] {
+            display: block;
+            margin: 0 0 0 auto;
+        }
+
+        .markdown-body li.task-list-item {
+            list-style-type: none;
+        }
+
+        .markdown-body li > [type=checkbox] {
+            margin: 0 0 0 -1.3em;
+        }
+
+        .markdown-body input[type="checkbox"] ~ p {
+            margin-top: 0;
+            display: inline-block;
+        }
+
+        .markdown-body ol ol,
+        .markdown-body ul ol {
+            list-style-type: decimal;
+        }
+
+        .markdown-body ol ol ol,
+        .markdown-body ol ul ol,
+        .markdown-body ul ol ol,
+        .markdown-body ul ul ol {
+            list-style-type: decimal;
+        }
+    </style>
+    <style>.markdown-body a.footnote-ref {
+        text-decoration: none;
+    }
+
+    .footnotes {
+        font-size: .85em;
+        opacity: .8;
+    }
+
+    .footnotes li[role="doc-endnote"] {
+        position: relative;
+    }
+
+    .footnotes .footnote-back {
+        position: absolute;
+        font-family: initial;
+        top: .2em;
+        right: 1em;
+        text-decoration: none;
+    }
+
+    .inline-math.invalid,
+    .multiple-math.invalid {
+        color: rgb(255, 105, 105);
+    }
+
+    .toc-container {
+        width: 100%;
+    }
+
+    .toc-container .toc-title {
+        font-weight: 700;
+        font-size: 1.2em;
+        margin-bottom: 0;
+    }
+
+    .toc-container li,
+    .toc-container ul,
+    .toc-container ul li {
+        list-style: none !important;
+    }
+
+    .toc-container > ul {
+        padding-left: 0;
+    }
+
+    .toc-container ul li span {
+        display: flex;
+    }
+
+    .toc-container ul li span a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .toc-container ul li span a:hover {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .toc-container ul li span span.dots {
+        flex: 1;
+        height: 0.65em;
+        margin: 0 10px;
+        border-bottom: 2px dotted black;
+    }
+    </style>
+    <style>.markdown-body {
+    }
+
+    body {
+        counter-reset: h2
+    }
+
+    h2 {
+        counter-reset: h3
+    }
+
+    h3 {
+        counter-reset: h4
+    }
+
+    h4 {
+        counter-reset: h5
+    }
+
+    h5 {
+        counter-reset: h6
+    }
+
+    h2:before {
+        counter-increment: h2;
+        content: counter(h2) ". "
+    }
+
+    h3:before {
+        counter-increment: h3;
+        content: counter(h2) "." counter(h3) ". "
+    }
+
+    h4:before {
+        counter-increment: h4;
+        content: counter(h2) "." counter(h3) "." counter(h4) ". "
+    }
+
+    h5:before {
+        counter-increment: h5;
+        content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". "
+    }
+
+    h6:before {
+        counter-increment: h6;
+        content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". "
+    }
+
+    h2.nocount:before, h3.nocount:before, h4.nocount:before, h5.nocount:before, h6.nocount:before {
+        content: "";
+        counter-increment: none
+    }
+
+    pre.front-matter {
+        display: none !important;
+    }</style>
+
+    <link rel="stylesheet" href="w3.css">
+</head>
+
+<body>
+<div class="w3-bar w3-cyan w3-text-white">
+    <a href="./HTML.html" class="w3-bar-item w3-button">Základy HTML</a>
+    <a href="./CSS.html" class="w3-bar-item w3-button">Základy CSS</a>
+    <a href="./Javascript.html" class="w3-bar-item w3-button">Základy JS</a>
+    <a href="./index.html" class="w3-bar-item w3-button">Základy Vue</a>
+    <a href="./webpack.html" class="w3-bar-item w3-button">Webpack</a>
+    <a href="./sfc.html" class="w3-bar-item w3-button">Single File Component</a>
+    <a href="./composition-api.html" class="w3-bar-item w3-button">Composition API</a>
+</div>
+<article class="markdown-body"><h1 class="atx" id="javascript">Javascript</h1>
+    <ul>
+        <li><a href="#javascript">Javascript</a>
+            <ul>
+                <li><a href="#koment--e">Komentáře</a></li>
+                <li><a href="#--sla-a-oper-tory">Čísla a operátory</a>
+                    <ul>
+                        <li><a href="#z-kladn--matematick--operace">Základní matematické operace</a></li>
+                        <li><a href="#js-m--t-i-hodnoty-mimo-obor-re-ln-ch---sel">JS má tři hodnoty mimo obor reálných
+                            čísel</a></li>
+                        <li><a href="#logick--hodnoty">Logické hodnoty</a></li>
+                        <li><a href="#porovn-n--rovnost-">Porovnání rovností</a></li>
+                        <li><a href="#rovnost-hodnot">Rovnost hodnot</a></li>
+                        <li><a href="#negace">Negace</a></li>
+                        <li><a href="#pr-zdn--datov-">Prázdné datové</a></li>
+                    </ul>
+                </li>
+                <li><a href="#--zen--toku-programu">Řízení toku programu</a>
+                    <ul>
+                        <li><a href="#if---else-if---else">if - else if - else</a></li>
+                        <li><a href="#ternary-oper-tor">ternary operátor</a></li>
+                        <li><a href="#boolean">boolean</a></li>
+                        <li><a href="#vyj-mky---exceptions">Vyjímky - exceptions</a></li>
+                        <li><a href="#continue---break">Continue / Break</a></li>
+                        <li><a href="#for-cyklus">For cyklus</a></li>
+                    </ul>
+                </li>
+                <li><a href="#-et-zce">Řetězce</a>
+                    <ul>
+                        <li><a href="#d-lka">Délka</a></li>
+                        <li><a href="#vkl-d-n--prom-n--do--et-zce">Vkládání proměné do řetězce</a></li>
+                        <li><a href="#v-ce--dkov---etezce">Víceřádkové řetezce</a></li>
+                        <li><a href="#p-eveden---etezce-na-integer--cel----slo-">Převedení řetezce na integer (celé
+                            číslo)</a></li>
+                        <li><a href="#kontrola-jestli--etezec-obsahuje--includes-">Kontrola jestli řetezec obsahuje
+                            (includes)</a></li>
+                        <li><a href="#vybr-n--sub-et-zce">Vybrání subřetězce</a></li>
+                        <li><a href="#vytvo-en---et-zce-ze-seznamu">Vytvoření řetězce ze seznamu</a></li>
+                        <li><a href="#metoda-strip---odstran-n--b-l-ch-znak-">Metoda strip - odstranění bílých znaků</a>
+                        </li>
+                        <li><a href="#metoda-split---vytvo-en--seznamu-z--et-zce">Metoda split - vytvoření seznamu z
+                            řetězce</a></li>
+                        <li><a href="#metoda-replace---nahrazen--znak-">Metoda replace - nahrazení znaků</a></li>
+                    </ul>
+                </li>
+                <li><a href="#seznamy-pole">Seznamy/pole</a>
+                    <ul>
+                        <li><a href="#iterace-p-es-v-echny-prvky">Iterace přes všechny prvky</a></li>
+                        <li><a href="#velikost-d-lka">Velikost/délka</a></li>
+                        <li><a href="#enumarate---p-i-ad--ka-d-m-prvku-po-adov----slo">Enumarate - přiřadí každém prvku
+                            pořadové číslo</a></li>
+                        <li><a href="#dotaz-na-v-skyt-prvky---includes--">Dotaz na výskyt prvky - includes()</a></li>
+                        <li><a href="#reverse---obr-t--po-ad-">Reverse - obrátí pořadí</a></li>
+                        <li><a href="#p-id-n--prvku-na-konec-seznamu">Přidání prvku na konec seznamu</a></li>
+                        <li><a href="#p-id-n--prvku-na-konec-seznamu-bez-modifikace-p-vodn-ho--ale-vytvo-en--nov-ho">Přidání
+                            prvku na konec seznamu bez modifikace původního, ale vytvoření nového</a></li>
+                        <li><a href="#roz---en--p-vodn-ho-seznamu-jin-m-seznamem">Rozšíření původního seznamu jiným
+                            seznamem</a></li>
+                        <li>
+                            <a href="#roz---en--p-vodn-ho-seznamu-jin-m-seznamem-bez-modifikace-p-vodn-ho--ale-vytvo-en--nov-ho">Rozšíření
+                                původního seznamu jiným seznamem bez modifikace původního, ale vytvoření nového</a></li>
+                        <li><a href="#vlo-en--nov-ho-prvku-na-za--tek">Vložení nového prvku na začátek</a></li>
+                        <li><a href="#odstran-n--prvku">Odstranění prvku</a></li>
+                        <li><a href="#po-adov--index-prvn-ho-v-skytu">Pořadový index prvního výskytu</a></li>
+                        <li><a href="#vytvo-en--kopie-listu">Vytvoření kopie listu</a></li>
+                        <li><a href="#aplikace-jednoduch--funkce-na-ka-d--prvek-seznamu---map">Aplikace jednoduché
+                            funkce na každý prvek seznamu - map</a></li>
+                        <li><a href="#filtrov-n--hodnot">Filtrování hodnot</a></li>
+                        <li><a href="#vyb-r-n--sub-seznam-">Vybírání sub-seznamů</a></li>
+                        <li><a href="#-azen-">Řazení</a></li>
+                        <li><a href="#-azen--podle-valstn-ho-pravidla">Řazení podle valstního pravidla</a></li>
+                    </ul>
+                </li>
+                <li><a href="#slovn-ky-objekty">Slovníky/objekty</a>
+                    <ul>
+                        <li><a href="#iterace-p-es-kl--e-a-hodnoty">Iterace přes klíče a hodnoty</a></li>
+                        <li><a href="#dotaz-na-v-skyt-kl--e-ve-slovn-ku">Dotaz na výskyt klíče ve slovníku</a></li>
+                        <li><a href="#p-id-n--nov-ho-p-ru-kl---hodnota-s-modifikac-">Přidání nového páru klíč:hodnota s
+                            modifikací</a></li>
+                        <li><a href="#p-id-n--nov-ho-p-ru-kl---hodnota-bez-modifikace-p-vodn-ho-slovn-ku">Přidání nového
+                            páru klíč:hodnota bez modifikace původního slovníku</a></li>
+                        <li><a href="#iterace-p-es-kl--e">Iterace přes klíče</a></li>
+                        <li><a href="#iterace-p-es-hodnoty">Iterace přes hodnoty</a></li>
+                        <li><a href="#odstran-n--p-ru-kl---hodnota">Odstranění páru klíč:hodnota</a></li>
+                        <li>
+                            <a href="#z-sk-n--hodnoty-na-z-klad--kl--e-a-v-p--pad----e-neexistuje-tak-defaultn--hodnoty">Získání
+                                hodnoty na základě klíče a v případě, že neexistuje tak defaultní hodnoty</a></li>
+                        <li><a href="#kopie-slovn-ku">Kopie slovníku</a></li>
+                        <li><a href="#transformace-slovn-ku-objektu-na-json-string">Transformace slovníku/objektu na
+                            JSON string</a></li>
+                        <li><a href="#transformace-json-strigu-na-objekt">Transformace JSON strigu na objekt</a></li>
+                    </ul>
+                </li>
+                <li><a href="#funkce">Funkce</a>
+                    <ul>
+                        <li><a href="#definice">Definice</a></li>
+                        <li><a href="#argument-s-v-choz--hodnotou">Argument s výchozí hodnotou</a></li>
+                        <li><a href="#prom-nliv--po-et-argument-">Proměnlivý počet argumentů</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t--dy">Třídy</a></li>
+            </ul>
+        </li>
+    </ul>
+    <h2 class="atx" id="komentare">Komentáře</h2>
+    <pre><code class="fenced-code-block language-javascript"><span class="token comment">// Jednořádkové komentáře začínají dvojitým lomítkem,</span>
+<span class="token comment">/* a víceřádkové komentáře začínají lomítkem s hvězdičkou
+   a končí hvězdičkou s lomítkem */</span></code></pre>
+    <h2 class="atx" id="cisla-a-operatory">Čísla a operátory</h2>
+    <p>JavaScript má jeden číselný typ (čímž je 64-bitový IEEE 754 double).
+        Double má 52-bitovou přesnost, což je dostatečně přesné pro ukládání celých čísel až do 9✕10¹⁵.</p>
+    <pre><code class="fenced-code-block language-javascript"><span class="token number">3</span><span
+            class="token punctuation">;</span>
+<span class="token number">1.5</span><span class="token punctuation">;</span> </code></pre>
+    <h3 class="atx" id="zakladni-matematicke-operace">Základní matematické operace</h3>
+    <pre><code class="fenced-code-block language-javascript"><span class="token number">1</span> <span
+            class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token number">0.1</span> <span class="token operator">+</span> <span class="token number">0.2</span><span
+                class="token punctuation">;</span> <span class="token comment">// = 0.30000000000000004</span>
+<span class="token number">8</span> <span class="token operator">-</span><span class="token number">1</span><span
+                class="token punctuation">;</span>
+<span class="token number">10</span> <span class="token operator">*</span> <span class="token number">2</span><span
+                class="token punctuation">;</span>
+<span class="token number">35</span><span class="token operator">/</span><span class="token number">5</span><span
+                class="token punctuation">;</span> <span class="token comment">//celočíselné dělení</span>
+<span class="token number">5</span><span class="token operator">/</span><span class="token number">2</span><span
+                class="token punctuation">;</span> <span class="token comment">// = 2.5</span>
+
+<span class="token comment">// dělení modulo</span>
+<span class="token number">10</span> <span class="token operator">%</span> <span class="token number">2</span><span
+                class="token punctuation">;</span> <span class="token comment">// = 0</span>
+<span class="token number">30</span> <span class="token operator">%</span> <span class="token number">4</span><span
+                class="token punctuation">;</span> <span class="token comment">// = 2</span>
+<span class="token number">18.5</span> <span class="token operator">%</span> <span class="token number">7</span><span
+                class="token punctuation">;</span> <span class="token comment">// = 4.5</span></code></pre>
+    <h3 class="atx" id="js-ma-tri-hodnoty-mimo-obor-realnych-cisel">JS má tři hodnoty mimo obor reálných čísel</h3>
+    <pre><code class="fenced-code-block language-javascript"><span class="token number">Infinity</span><span
+            class="token punctuation">;</span> <span class="token comment">// + nekonečno; výsledek např. 1/0</span>
+<span class="token operator">-</span><span class="token number">Infinity</span><span class="token punctuation">;</span> <span
+                class="token comment">// - nekonečno; výsledek např. -1/0</span>
+<span class="token number">NaN</span><span class="token punctuation">;</span> <span class="token comment">// výsledek např. 0/0, znamená, že výsledek není číslo ('Not a Number')</span></code></pre>
+    <h3 class="atx" id="logicke-hodnoty">Logické hodnoty</h3>
+    <pre><code class="fenced-code-block language-javascript"><span class="token boolean">true</span><span
+            class="token punctuation">;</span> <span class="token comment">// pravda</span>
+<span class="token boolean">false</span><span class="token punctuation">;</span> <span
+                class="token comment">// nepravda</span></code></pre>
+    <h3 class="atx" id="porovnani-rovnosti">Porovnání rovností</h3>
+    <pre><code class="fenced-code-block language-javascript"><span class="token comment">// Rovnost se porovnává pomocí ===</span>
+<span class="token number">1</span> <span class="token operator">===</span> <span class="token number">1</span><span
+                class="token punctuation">;</span> <span class="token comment">// = true</span>
+<span class="token number">2</span> <span class="token operator">===</span> <span class="token number">1</span><span
+                class="token punctuation">;</span> <span class="token comment">// = false</span>
+
+<span class="token comment">// Nerovnost zase pomocí !==</span>
+<span class="token number">1</span> <span class="token operator">!==</span> <span class="token number">1</span><span
+                class="token punctuation">;</span> <span class="token comment">// = false</span>
+<span class="token number">2</span> <span class="token operator">!==</span> <span class="token number">1</span><span
+                class="token punctuation">;</span> <span class="token comment">// = true</span>
+
+<span class="token comment">// Další srovnávání</span>
+<span class="token number">1</span> <span class="token operator">&lt;</span> <span class="token number">10</span><span
+                class="token punctuation">;</span> <span class="token comment">// = true</span>
+<span class="token number">1</span> <span class="token operator">&gt;</span> <span class="token number">10</span><span
+                class="token punctuation">;</span> <span class="token comment">// = false</span>
+<span class="token number">2</span> <span class="token operator">&lt;=</span> <span class="token number">2</span><span
+                class="token punctuation">;</span> <span class="token comment">// = true</span>
+<span class="token number">2</span> <span class="token operator">&gt;=</span> <span class="token number">2</span><span
+                class="token punctuation">;</span> <span class="token comment">// = true</span></code></pre>
+    <h3 class="atx" id="rovnost-hodnot">Rovnost hodnot</h3>
+    <pre><code class="fenced-code-block language-javascript"><span class="token comment">// Rovnost s převodem typů se dělá za pomoci dvojitého rovnítka...</span>
+<span class="token string">"5"</span> <span class="token operator">==</span> <span class="token number">5</span><span
+                class="token punctuation">;</span> <span class="token comment">// = true</span>
+<span class="token keyword">null</span> <span class="token operator">==</span> <span
+                class="token keyword">undefined</span><span class="token punctuation">;</span> <span
+                class="token comment">// = true</span></code></pre>
+    <h3 class="atx" id="negace">Negace</h3>
+    <pre><code class="fenced-code-block language-javascript"><span class="token operator">!</span><span
+            class="token boolean">true</span><span class="token punctuation">;</span> <span class="token comment">// = false</span>
+<span class="token operator">!</span><span class="token boolean">false</span><span
+                class="token punctuation">;</span> <span class="token comment">// = true</span></code></pre>
+    <h3 class="atx" id="prazdne-datove">Prázdné datové</h3>
+    <pre><code class="fenced-code-block language-javascript"><span class="token keyword">null</span><span
+            class="token punctuation">;</span>      <span class="token comment">// obvykle označuje něco záměrně bez hodnoty</span>
+<span class="token keyword">undefined</span><span class="token punctuation">;</span> <span class="token comment">// obvykle označuje, že hodnota není momentálně definovaná (ačkoli</span>
+           <span class="token comment">// `undefined` je hodnota sama o sobě)</span></code></pre>
+    <h2 class="atx" id="rizeni-toku-programu">Řízení toku programu</h2>
+    <h3 class="atx" id="if---else-if---else">if - else if - else</h3>
+    <pre><code class="fenced-code-block language-javascript"><span class="token keyword">const</span> someNumber <span
+            class="token operator">=</span> <span class="token number">3</span>
+
+<span class="token comment">// Number is 3</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>someNumber <span class="token operator">===</span> <span
+                class="token number">1</span><span class="token punctuation">)</span> <span
+                class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token string">'Number is 1'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span
+                class="token keyword">if</span> <span class="token punctuation">(</span>someNumber <span
+                class="token operator">===</span> <span class="token number">2</span><span
+                class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token string">'Number is 2'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span
+                class="token keyword">if</span> <span class="token punctuation">(</span>someNumber <span
+                class="token operator">===</span> <span class="token number">3</span><span
+                class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token string">'Number is 3'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span
+                class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token string">'?'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre>
+    <h3 class="atx" id="ternary-operator">ternary operátor</h3>
+    <pre><code class="fenced-code-block language-javascript"><span class="token keyword">const</span> x <span
+            class="token operator">=</span> <span class="token number">2</span>
+<span class="token keyword">const</span> y <span class="token operator">=</span> <span class="token number">3</span>
+
+<span class="token comment">// even</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span
+                class="token punctuation">(</span>x <span class="token operator">%</span> <span
+                class="token number">2</span> <span class="token operator">===</span> <span
+                class="token number">0</span> <span class="token operator">?</span> <span
+                class="token string">'even'</span> <span class="token operator">:</span> <span class="token string">'odd'</span><span
+                class="token punctuation">)</span>
+<span class="token comment">// odd</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span
+                class="token punctuation">(</span>y <span class="token operator">%</span> <span
+                class="token number">2</span> <span class="token operator">===</span> <span
+                class="token number">0</span> <span class="token operator">?</span> <span
+                class="token string">'even'</span> <span class="token operator">:</span> <span class="token string">'odd'</span><span
+                class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="boolean">boolean</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token comment">// yes</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span
+                class="token string">'abc'</span> <span class="token operator">===</span> <span class="token string">'abc'</span><span
+                class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token string">'yes'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span
+                class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token string">'no'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// yes</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span
+                class="token string">'abc'</span> <span class="token operator">!==</span> <span class="token string">'def'</span><span
+                class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token string">'yes'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span
+                class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token string">'no'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// no</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span
+                class="token boolean">true</span> <span class="token operator">&amp;&amp;</span> <span
+                class="token boolean">false</span><span class="token punctuation">)</span> <span
+                class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token string">'yes'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span
+                class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token string">'no'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// yes</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span
+                class="token boolean">true</span> <span class="token operator">||</span> <span class="token boolean">false</span><span
+                class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token string">'yes'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span
+                class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token string">'no'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// yes</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span
+                class="token boolean">false</span><span class="token punctuation">)</span> <span
+                class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token string">'yes'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span
+                class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token string">'no'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// no</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token number">0</span><span
+                class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token string">'yes'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span
+                class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token string">'no'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// no</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token string">''</span><span
+                class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token string">'yes'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span
+                class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token string">'no'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// no</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span
+                class="token keyword">undefined</span><span class="token punctuation">)</span> <span
+                class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token string">'yes'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span
+                class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token string">'no'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// no</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span
+                class="token keyword">null</span><span class="token punctuation">)</span> <span
+                class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token string">'yes'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span
+                class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token string">'no'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// yes</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span
+                class="token operator">!</span><span class="token operator">!</span><span
+                class="token keyword">null</span><span class="token punctuation">)</span> <span
+                class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token string">'yes'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span
+                class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token string">'no'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre>
+    <h3 class="atx" id="vyjimky---exceptions">Vyjímky - exceptions</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token comment">// foo is not defined</span>
+<span class="token keyword">try</span> <span class="token punctuation">{</span>
+  <span class="token function">foo</span><span class="token punctuation">(</span><span
+                class="token punctuation">)</span>
+<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span
+                class="token punctuation">(</span>error<span class="token punctuation">)</span> <span
+                class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token string">'foo is not defined'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre>
+    <h3 class="atx" id="continue--break">Continue / Break</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">for</span> <span
+            class="token punctuation">(</span><span class="token keyword">let</span> i <span
+            class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span
+            class="token operator">&lt;=</span> <span class="token number">100</span><span
+            class="token punctuation">;</span> i <span class="token operator">=</span> i <span
+            class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span
+            class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span
+                class="token operator">===</span> <span class="token number">3</span><span
+                class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span
+                class="token punctuation">(</span><span class="token string">'Fizz'</span><span
+                class="token punctuation">)</span>
+    <span class="token keyword">continue</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span
+                class="token operator">===</span> <span class="token number">5</span><span
+                class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span
+                class="token punctuation">(</span><span class="token string">'Buzz'</span><span
+                class="token punctuation">)</span>
+    <span class="token keyword">break</span>
+  <span class="token punctuation">}</span>
+
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span
+                class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre>
+    <h3 class="atx" id="for-cyklus">For cyklus</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token comment">// 0</span>
+<span class="token comment">// 1</span>
+<span class="token comment">// 2</span>
+<span class="token comment">// 3</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span
+                class="token operator">=</span> <span class="token number">0</span><span
+                class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span
+                class="token number">4</span><span class="token punctuation">;</span> i<span
+                class="token operator">++</span><span class="token punctuation">)</span> <span
+                class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span
+                class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 4</span>
+<span class="token comment">// 5</span>
+<span class="token comment">// 6</span>
+<span class="token comment">// 7</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span
+                class="token operator">=</span> <span class="token number">4</span><span
+                class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span
+                class="token number">8</span><span class="token punctuation">;</span> i<span
+                class="token operator">++</span><span class="token punctuation">)</span> <span
+                class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span
+                class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 6</span>
+<span class="token comment">// 5</span>
+<span class="token comment">// 4</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span
+                class="token operator">=</span> <span class="token number">6</span><span
+                class="token punctuation">;</span> i <span class="token operator">&gt;</span> <span
+                class="token number">3</span><span class="token punctuation">;</span> i<span
+                class="token operator">--</span><span class="token punctuation">)</span> <span
+                class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span
+                class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre>
+    <h2 class="atx" id="retezce">Řetězce</h2>
+    <h3 class="atx" id="delka">Délka</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> someString <span
+            class="token operator">=</span> <span class="token string">'abcd'</span>
+
+<span class="token comment">// 4</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span
+                class="token punctuation">(</span>someString<span class="token punctuation">.</span>length<span
+                class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="vkladani-promene-do-retezce">Vkládání proměné do řetězce</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> x <span
+            class="token operator">=</span> <span class="token string">'Hello'</span>
+
+<span class="token comment">// Hello World</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span
+                class="token punctuation">(</span><span class="token template-string"><span
+                class="token template-punctuation string">`</span><span class="token interpolation"><span
+                class="token interpolation-punctuation punctuation">${</span>x<span
+                class="token interpolation-punctuation punctuation">}</span></span><span
+                class="token string"> World</span><span class="token template-punctuation string">`</span></span><span
+                class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="viceradkove-retezce">Víceřádkové řetezce</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> x <span
+            class="token operator">=</span> <span class="token template-string"><span
+            class="token template-punctuation string">`</span><span class="token string">------
+Line 1
+Line 2
+Line 3
+------</span><span class="token template-punctuation string">`</span></span>
+
+<span class="token comment">// ------</span>
+<span class="token comment">// Line 1</span>
+<span class="token comment">// Line 2</span>
+<span class="token comment">// Line 3</span>
+<span class="token comment">// ------</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span
+                class="token punctuation">(</span>x<span class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="prevedeni-retezce-na-integer-cele-cislo">Převedení řetezce na integer (celé číslo)</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> string1 <span
+            class="token operator">=</span> <span class="token string">'1'</span>
+<span class="token keyword">const</span> number1 <span class="token operator">=</span> <span class="token function">parseInt</span><span
+                class="token punctuation">(</span>string1<span class="token punctuation">)</span>
+
+<span class="token comment">// 3</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span
+                class="token punctuation">(</span>number1 <span class="token operator">+</span> <span
+                class="token number">2</span><span class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="kontrola-jestli-retezec-obsahuje-includes">Kontrola jestli řetezec obsahuje (includes)</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token comment">// 2 is in the string</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span
+                class="token string">'123'</span><span class="token punctuation">.</span><span class="token function">includes</span><span
+                class="token punctuation">(</span><span class="token string">'2'</span><span
+                class="token punctuation">)</span><span class="token punctuation">)</span> <span
+                class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token string">'2 is in the string'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 2 is not in the string</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span
+                class="token string">'456'</span><span class="token punctuation">.</span><span class="token function">includes</span><span
+                class="token punctuation">(</span><span class="token string">'2'</span><span
+                class="token punctuation">)</span><span class="token punctuation">)</span> <span
+                class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token string">'2 is not in the string'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre>
+    <h3 class="atx" id="vybrani-subretezce">Vybrání subřetězce</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> someString <span
+            class="token operator">=</span> <span class="token string">'0123456'</span>
+
+<span class="token comment">// 234</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span
+                class="token punctuation">(</span>someString<span class="token punctuation">.</span><span
+                class="token function">substring</span><span class="token punctuation">(</span><span
+                class="token number">2</span><span class="token punctuation">,</span> <span
+                class="token number">5</span><span class="token punctuation">)</span><span
+                class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="vytvoreni-retezce-ze-seznamu">Vytvoření řetězce ze seznamu</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> someList <span
+            class="token operator">=</span> <span class="token punctuation">[</span><span
+            class="token string">'a'</span><span class="token punctuation">,</span> <span
+            class="token string">'b'</span><span class="token punctuation">,</span> <span
+            class="token string">'c'</span><span class="token punctuation">]</span>
+
+<span class="token comment">// a,b,c</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span
+                class="token punctuation">(</span>someList<span class="token punctuation">.</span><span
+                class="token function">join</span><span class="token punctuation">(</span><span
+                class="token string">','</span><span class="token punctuation">)</span><span
+                class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="metoda-strip---odstraneni-bilych-znaku">Metoda strip - odstranění bílých znaků</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> someString <span
+            class="token operator">=</span> <span class="token string">'   abc   '</span>
+
+<span class="token comment">// abc</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span
+                class="token punctuation">(</span>someString<span class="token punctuation">.</span><span
+                class="token function">trim</span><span class="token punctuation">(</span><span
+                class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="metoda-split---vytvoreni-seznamu-z-retezce">Metoda split - vytvoření seznamu z řetězce</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> someString <span
+            class="token operator">=</span> <span class="token string">'a,b,c'</span>
+<span class="token keyword">const</span> someStringSplit <span class="token operator">=</span> someString<span
+                class="token punctuation">.</span><span class="token function">split</span><span
+                class="token punctuation">(</span><span class="token string">','</span><span
+                class="token punctuation">)</span>
+
+<span class="token comment">// a</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span
+                class="token punctuation">(</span>someStringSplit<span class="token punctuation">[</span><span
+                class="token number">0</span><span class="token punctuation">]</span><span
+                class="token punctuation">)</span>
+<span class="token comment">// b</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span
+                class="token punctuation">(</span>someStringSplit<span class="token punctuation">[</span><span
+                class="token number">1</span><span class="token punctuation">]</span><span
+                class="token punctuation">)</span>
+<span class="token comment">// c</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span
+                class="token punctuation">(</span>someStringSplit<span class="token punctuation">[</span><span
+                class="token number">2</span><span class="token punctuation">]</span><span
+                class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="metoda-replace---nahrazeni-znaku">Metoda replace - nahrazení znaků</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> someString <span
+            class="token operator">=</span> <span class="token string">'a b c d e'</span>
+
+<span class="token comment">// Only changes the first space</span>
+<span class="token comment">// a,b c d e</span>
+<span class="token comment">// console.log(someString.replace(' ', ','))</span>
+
+<span class="token comment">// Use / /g instead of ' ' to change every space</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span
+                class="token punctuation">(</span>someString<span class="token punctuation">.</span><span
+                class="token function">replace</span><span class="token punctuation">(</span><span
+                class="token regex"><span class="token regex-delimiter">/</span><span
+                class="token regex-source language-regex"> </span><span class="token regex-delimiter">/</span><span
+                class="token regex-flags">g</span></span><span class="token punctuation">,</span> <span
+                class="token string">','</span><span class="token punctuation">)</span><span
+                class="token punctuation">)</span></code></pre>
+    <h2 class="atx" id="seznamypole">Seznamy/pole</h2>
+    <h3 class="atx" id="iterace-pres-vsechny-prvky">Iterace přes všechny prvky</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> someList <span
+            class="token operator">=</span> <span class="token punctuation">[</span><span
+            class="token number">6</span><span class="token punctuation">,</span> <span
+            class="token number">3</span><span class="token punctuation">,</span> <span
+            class="token number">5</span><span class="token punctuation">]</span>
+
+<span class="token comment">// 6</span>
+<span class="token comment">// 3</span>
+<span class="token comment">// 5</span>
+someList<span class="token punctuation">.</span><span class="token function">forEach</span><span
+                class="token punctuation">(</span><span class="token parameter">element</span> <span
+                class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>element<span
+                class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+    <p>Alternativně používám tento konstrukt:</p>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> array1 <span
+            class="token operator">=</span> <span class="token punctuation">[</span><span
+            class="token string">'a'</span><span class="token punctuation">,</span> <span
+            class="token string">'b'</span><span class="token punctuation">,</span> <span
+            class="token string">'c'</span><span class="token punctuation">]</span><span
+            class="token punctuation">;</span>
+
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">const</span> element <span
+                class="token keyword">of</span> array1<span class="token punctuation">)</span> <span
+                class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>element<span
+                class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// expected output: "a"</span>
+<span class="token comment">// expected output: "b"</span>
+<span class="token comment">// expected output: "c"</span></code></pre>
+    <p>Je to více pythoní cesta, i když to prodlužuje kód, tak se mi to zdá přehlednější</p>
+    <h3 class="atx" id="velikostdelka">Velikost/délka</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> someList <span
+            class="token operator">=</span> <span class="token punctuation">[</span><span
+            class="token number">1</span><span class="token punctuation">,</span> <span
+            class="token number">4</span><span class="token punctuation">,</span> <span
+            class="token number">9</span><span class="token punctuation">]</span>
+
+<span class="token comment">// 3</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span
+                class="token punctuation">(</span>someList<span class="token punctuation">.</span>length<span
+                class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="enumarate---priradi-kazdem-prvku-poradove-cislo">Enumarate - přiřadí každém prvku pořadové
+        číslo</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> someList <span
+            class="token operator">=</span> <span class="token punctuation">[</span><span
+            class="token string">'a'</span><span class="token punctuation">,</span> <span
+            class="token string">'b'</span><span class="token punctuation">,</span> <span
+            class="token string">'c'</span><span class="token punctuation">]</span>
+
+<span class="token comment">// 0 a</span>
+<span class="token comment">// 1 b</span>
+<span class="token comment">// 2 c</span>
+
+someList<span class="token punctuation">.</span><span class="token function">forEach</span><span
+                class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">element<span
+                class="token punctuation">,</span> index</span><span class="token punctuation">)</span> <span
+                class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token template-string"><span class="token template-punctuation string">`</span><span
+                class="token interpolation"><span
+                class="token interpolation-punctuation punctuation">${</span>index<span
+                class="token interpolation-punctuation punctuation">}</span></span><span
+                class="token string"> </span><span class="token interpolation"><span
+                class="token interpolation-punctuation punctuation">${</span>element<span
+                class="token interpolation-punctuation punctuation">}</span></span><span
+                class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="dotaz-na-vyskyt-prvky---includes">Dotaz na výskyt prvky - includes()</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token comment">// 2 is in the list</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span
+                class="token punctuation">[</span><span class="token number">1</span><span
+                class="token punctuation">,</span> <span class="token number">2</span><span
+                class="token punctuation">,</span> <span class="token number">3</span><span
+                class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">includes</span><span
+                class="token punctuation">(</span><span class="token number">2</span><span
+                class="token punctuation">)</span><span class="token punctuation">)</span> <span
+                class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token string">'2 is in the list'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 2 is not in the list</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span
+                class="token punctuation">[</span><span class="token number">4</span><span
+                class="token punctuation">,</span> <span class="token number">5</span><span
+                class="token punctuation">,</span> <span class="token number">6</span><span
+                class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">includes</span><span
+                class="token punctuation">(</span><span class="token number">2</span><span
+                class="token punctuation">)</span><span class="token punctuation">)</span> <span
+                class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token string">'2 is not in the list'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre>
+    <h3 class="atx" id="reverse---obrati-poradi">Reverse - obrátí pořadí</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> someList <span
+            class="token operator">=</span> <span class="token punctuation">[</span><span
+            class="token number">1</span><span class="token punctuation">,</span> <span
+            class="token number">2</span><span class="token punctuation">,</span> <span
+            class="token number">3</span><span class="token punctuation">,</span> <span
+            class="token number">4</span><span class="token punctuation">]</span>
+
+someList<span class="token punctuation">.</span><span class="token function">reverse</span><span
+                class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 4</span>
+<span class="token comment">// 3</span>
+<span class="token comment">// 2</span>
+<span class="token comment">// 1</span>
+someList<span class="token punctuation">.</span><span class="token function">forEach</span><span
+                class="token punctuation">(</span><span class="token parameter">element</span> <span
+                class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>element<span
+                class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="pridani-prvku-na-konec-seznamu">Přidání prvku na konec seznamu</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> someList <span
+            class="token operator">=</span> <span class="token punctuation">[</span><span
+            class="token number">1</span><span class="token punctuation">,</span> <span
+            class="token number">2</span><span class="token punctuation">]</span>
+
+someList<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span
+                class="token number">3</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 1</span>
+<span class="token comment">// 2</span>
+<span class="token comment">// 3</span>
+someList<span class="token punctuation">.</span><span class="token function">forEach</span><span
+                class="token punctuation">(</span><span class="token parameter">element</span> <span
+                class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>element<span
+                class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="pridani-prvku-na-konec-seznamu-bez-modifikace-puvodniho-ale-vytvoreni-noveho">Přidání prvku na
+        konec seznamu bez modifikace původního, ale vytvoření nového</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> originalList <span
+            class="token operator">=</span> <span class="token punctuation">[</span><span
+            class="token number">1</span><span class="token punctuation">,</span> <span
+            class="token number">2</span><span class="token punctuation">]</span>
+
+<span class="token comment">// [originalList, 3] -&gt; [[1, 2], 3]</span>
+<span class="token comment">// [...originalList, 3] -&gt; [1, 2, 3]</span>
+<span class="token keyword">const</span> newList <span class="token operator">=</span> <span
+                class="token punctuation">[</span><span class="token operator">...</span>originalList<span
+                class="token punctuation">,</span> <span class="token number">3</span><span
+                class="token punctuation">]</span>
+originalList<span class="token punctuation">[</span><span class="token number">0</span><span
+                class="token punctuation">]</span> <span class="token operator">=</span> <span
+                class="token number">5</span>
+
+<span class="token comment">// 1</span>
+<span class="token comment">// 2</span>
+<span class="token comment">// 3</span>
+newList<span class="token punctuation">.</span><span class="token function">forEach</span><span
+                class="token punctuation">(</span><span class="token parameter">element</span> <span
+                class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>element<span
+                class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="rozsireni-puvodniho-seznamu-jinym-seznamem">Rozšíření původního seznamu jiným seznamem</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> someList <span
+            class="token operator">=</span> <span class="token punctuation">[</span><span
+            class="token number">1</span><span class="token punctuation">]</span>
+
+someList<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span
+                class="token operator">...</span><span class="token punctuation">[</span><span
+                class="token number">2</span><span class="token punctuation">,</span> <span
+                class="token number">3</span><span class="token punctuation">]</span><span
+                class="token punctuation">)</span>
+
+<span class="token comment">// 1</span>
+<span class="token comment">// 2</span>
+<span class="token comment">// 3</span>
+someList<span class="token punctuation">.</span><span class="token function">forEach</span><span
+                class="token punctuation">(</span><span class="token parameter">element</span> <span
+                class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>element<span
+                class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="rozsireni-puvodniho-seznamu-jinym-seznamem-bez-modifikace-puvodniho-ale-vytvoreni-noveho">
+        Rozšíření původního seznamu jiným seznamem bez modifikace původního, ale vytvoření nového</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> originalList <span
+            class="token operator">=</span> <span class="token punctuation">[</span><span
+            class="token number">1</span><span class="token punctuation">]</span>
+<span class="token keyword">const</span> newList <span class="token operator">=</span> originalList<span
+                class="token punctuation">.</span><span class="token function">concat</span><span
+                class="token punctuation">(</span><span class="token punctuation">[</span><span
+                class="token number">2</span><span class="token punctuation">,</span> <span
+                class="token number">3</span><span class="token punctuation">]</span><span
+                class="token punctuation">)</span>
+originalList<span class="token punctuation">[</span><span class="token number">0</span><span
+                class="token punctuation">]</span> <span class="token operator">=</span> <span
+                class="token number">5</span>
+
+<span class="token comment">// 1</span>
+<span class="token comment">// 2</span>
+<span class="token comment">// 3</span>
+newList<span class="token punctuation">.</span><span class="token function">forEach</span><span
+                class="token punctuation">(</span><span class="token parameter">element</span> <span
+                class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>element<span
+                class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="vlozeni-noveho-prvku-na-zacatek">Vložení nového prvku na začátek</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> someList <span
+            class="token operator">=</span> <span class="token punctuation">[</span><span
+            class="token number">4</span><span class="token punctuation">,</span> <span
+            class="token number">5</span><span class="token punctuation">]</span>
+someList<span class="token punctuation">.</span><span class="token function">unshift</span><span
+                class="token punctuation">(</span><span class="token number">3</span><span
+                class="token punctuation">)</span>
+
+<span class="token comment">// 3</span>
+<span class="token comment">// 4</span>
+<span class="token comment">// 5</span>
+someList<span class="token punctuation">.</span><span class="token function">forEach</span><span
+                class="token punctuation">(</span><span class="token parameter">element</span> <span
+                class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>element<span
+                class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="odstraneni-prvku">Odstranění prvku</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> someList <span
+            class="token operator">=</span> <span class="token punctuation">[</span><span
+            class="token string">'a'</span><span class="token punctuation">,</span> <span
+            class="token string">'b'</span><span class="token punctuation">,</span> <span
+            class="token string">'c'</span><span class="token punctuation">]</span>
+someList<span class="token punctuation">.</span><span class="token function">splice</span><span
+                class="token punctuation">(</span><span class="token number">1</span><span
+                class="token punctuation">,</span> <span class="token number">1</span><span
+                class="token punctuation">)</span>
+
+<span class="token comment">// a</span>
+<span class="token comment">// c</span>
+someList<span class="token punctuation">.</span><span class="token function">forEach</span><span
+                class="token punctuation">(</span><span class="token parameter">element</span> <span
+                class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>element<span
+                class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+    <p>nebo metoda <strong>pop</strong>, která uloží ostraněný prvek do proměnné</p>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> someList <span
+            class="token operator">=</span> <span class="token punctuation">[</span><span
+            class="token number">1</span><span class="token punctuation">,</span> <span
+            class="token number">2</span><span class="token punctuation">,</span> <span
+            class="token number">3</span><span class="token punctuation">,</span> <span
+            class="token number">4</span><span class="token punctuation">]</span>
+
+<span class="token comment">// 4</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span
+                class="token punctuation">(</span>someList<span class="token punctuation">.</span><span
+                class="token function">pop</span><span class="token punctuation">(</span><span
+                class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 1</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span
+                class="token punctuation">(</span>someList<span class="token punctuation">.</span><span
+                class="token function">shift</span><span class="token punctuation">(</span><span
+                class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 2</span>
+<span class="token comment">// 3</span>
+someList<span class="token punctuation">.</span><span class="token function">forEach</span><span
+                class="token punctuation">(</span><span class="token parameter">element</span> <span
+                class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>element<span
+                class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="poradovy-index-prvniho-vyskytu">Pořadový index prvního výskytu</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> someList <span
+            class="token operator">=</span> <span class="token punctuation">[</span><span
+            class="token string">'a'</span><span class="token punctuation">,</span> <span
+            class="token string">'b'</span><span class="token punctuation">,</span> <span
+            class="token string">'c'</span><span class="token punctuation">,</span> <span
+            class="token string">'d'</span><span class="token punctuation">,</span> <span
+            class="token string">'e'</span><span class="token punctuation">]</span>
+
+<span class="token comment">// 2</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span
+                class="token punctuation">(</span>someList<span class="token punctuation">.</span><span
+                class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">'c'</span><span
+                class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="vytvoreni-kopie-listu">Vytvoření kopie listu</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> originalList <span
+            class="token operator">=</span> <span class="token punctuation">[</span><span
+            class="token number">1</span><span class="token punctuation">,</span> <span
+            class="token number">2</span><span class="token punctuation">,</span> <span
+            class="token number">3</span><span class="token punctuation">]</span>
+<span class="token keyword">const</span> newList <span class="token operator">=</span> <span
+                class="token punctuation">[</span><span class="token operator">...</span>originalList<span
+                class="token punctuation">]</span>
+
+originalList<span class="token punctuation">[</span><span class="token number">2</span><span
+                class="token punctuation">]</span> <span class="token operator">=</span> <span
+                class="token number">4</span>
+
+<span class="token comment">// 1</span>
+<span class="token comment">// 2</span>
+<span class="token comment">// 3</span>
+newList<span class="token punctuation">.</span><span class="token function">forEach</span><span
+                class="token punctuation">(</span><span class="token parameter">element</span> <span
+                class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>element<span
+                class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="aplikace-jednoduche-funkce-na-kazdy-prvek-seznamu---map">Aplikace jednoduché funkce na každý
+        prvek seznamu - map</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> originalList <span
+            class="token operator">=</span> <span class="token punctuation">[</span><span
+            class="token number">1</span><span class="token punctuation">,</span> <span
+            class="token number">2</span><span class="token punctuation">,</span> <span
+            class="token number">3</span><span class="token punctuation">]</span>
+
+<span class="token comment">// You can also do this:</span>
+<span class="token comment">// const newList = originalList.map(x =&gt; { return x * 2 })</span>
+<span class="token keyword">const</span> newList <span class="token operator">=</span> originalList<span
+                class="token punctuation">.</span><span class="token function">map</span><span
+                class="token punctuation">(</span><span class="token parameter">x</span> <span class="token operator">=&gt;</span> x <span
+                class="token operator">*</span> <span class="token number">2</span><span
+                class="token punctuation">)</span>
+
+<span class="token comment">// 2</span>
+<span class="token comment">// 4</span>
+<span class="token comment">// 6</span>
+newList<span class="token punctuation">.</span><span class="token function">forEach</span><span
+                class="token punctuation">(</span><span class="token parameter">element</span> <span
+                class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>element<span
+                class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="filtrovani-hodnot">Filtrování hodnot</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> originalList <span
+            class="token operator">=</span> <span class="token punctuation">[</span><span
+            class="token number">1</span><span class="token punctuation">,</span> <span
+            class="token number">2</span><span class="token punctuation">,</span> <span
+            class="token number">3</span><span class="token punctuation">,</span> <span
+            class="token number">4</span><span class="token punctuation">,</span> <span
+            class="token number">5</span><span class="token punctuation">,</span> <span
+            class="token number">6</span><span class="token punctuation">]</span>
+<span class="token keyword">const</span> newList <span class="token operator">=</span> originalList<span
+                class="token punctuation">.</span><span class="token function">filter</span><span
+                class="token punctuation">(</span><span class="token parameter">x</span> <span class="token operator">=&gt;</span> x <span
+                class="token operator">%</span> <span class="token number">2</span> <span
+                class="token operator">==</span> <span class="token number">0</span><span
+                class="token punctuation">)</span>
+
+<span class="token comment">// 2</span>
+<span class="token comment">// 4</span>
+<span class="token comment">// 6</span>
+newList<span class="token punctuation">.</span><span class="token function">forEach</span><span
+                class="token punctuation">(</span><span class="token parameter">element</span> <span
+                class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>element<span
+                class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="vybirani-sub-seznamu">Vybírání sub-seznamů</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> originalList <span
+            class="token operator">=</span> <span class="token punctuation">[</span><span
+            class="token string">'a'</span><span class="token punctuation">,</span> <span
+            class="token string">'b'</span><span class="token punctuation">,</span> <span
+            class="token string">'c'</span><span class="token punctuation">,</span> <span
+            class="token string">'d'</span><span class="token punctuation">,</span> <span
+            class="token string">'e'</span><span class="token punctuation">]</span>
+<span class="token keyword">const</span> newList <span class="token operator">=</span> originalList<span
+                class="token punctuation">.</span><span class="token function">slice</span><span
+                class="token punctuation">(</span><span class="token number">1</span><span
+                class="token punctuation">,</span> <span class="token number">3</span><span
+                class="token punctuation">)</span>
+originalList<span class="token punctuation">[</span><span class="token number">1</span><span
+                class="token punctuation">]</span> <span class="token operator">=</span> <span
+                class="token string">'x'</span>
+
+<span class="token comment">// b</span>
+<span class="token comment">// c</span>
+newList<span class="token punctuation">.</span><span class="token function">forEach</span><span
+                class="token punctuation">(</span><span class="token parameter">element</span> <span
+                class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>element<span
+                class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="razeni">Řazení</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> someList <span
+            class="token operator">=</span> <span class="token punctuation">[</span><span
+            class="token number">4</span><span class="token punctuation">,</span> <span
+            class="token number">2</span><span class="token punctuation">,</span> <span
+            class="token number">1</span><span class="token punctuation">,</span> <span
+            class="token number">3</span><span class="token punctuation">]</span>
+
+<span class="token comment">// 1</span>
+<span class="token comment">// 2</span>
+<span class="token comment">// 3</span>
+<span class="token comment">// 4</span>
+someList<span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span
+                class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forEach</span><span
+                class="token punctuation">(</span><span class="token parameter">element</span> <span
+                class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>element<span
+                class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="razeni-podle-valstniho-pravidla">Řazení podle valstního pravidla</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> someList <span
+            class="token operator">=</span> <span class="token punctuation">[</span><span
+            class="token punctuation">[</span><span class="token string">'c'</span><span
+            class="token punctuation">,</span> <span class="token number">2</span><span
+            class="token punctuation">]</span><span class="token punctuation">,</span> <span
+            class="token punctuation">[</span><span class="token string">'b'</span><span
+            class="token punctuation">,</span> <span class="token number">3</span><span
+            class="token punctuation">]</span><span class="token punctuation">,</span> <span
+            class="token punctuation">[</span><span class="token string">'a'</span><span
+            class="token punctuation">,</span> <span class="token number">1</span><span
+            class="token punctuation">]</span><span class="token punctuation">]</span>
+
+<span class="token comment">// a 1</span>
+<span class="token comment">// c 2</span>
+<span class="token comment">// b 3</span>
+someList
+  <span class="token punctuation">.</span><span class="token function">sort</span><span
+                class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">a<span
+                class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span
+                class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> a<span class="token punctuation">[</span><span
+                class="token number">1</span><span class="token punctuation">]</span> <span
+                class="token operator">-</span> b<span class="token punctuation">[</span><span
+                class="token number">1</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">forEach</span><span
+                class="token punctuation">(</span><span class="token parameter">element</span> <span
+                class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span
+                class="token punctuation">(</span><span class="token template-string"><span
+                class="token template-punctuation string">`</span><span class="token interpolation"><span
+                class="token interpolation-punctuation punctuation">${</span>element<span
+                class="token punctuation">[</span><span class="token number">0</span><span
+                class="token punctuation">]</span><span
+                class="token interpolation-punctuation punctuation">}</span></span><span
+                class="token string"> </span><span class="token interpolation"><span
+                class="token interpolation-punctuation punctuation">${</span>element<span
+                class="token punctuation">[</span><span class="token number">1</span><span
+                class="token punctuation">]</span><span
+                class="token interpolation-punctuation punctuation">}</span></span><span
+                class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+    <h2 class="atx" id="slovnikyobjekty">Slovníky/objekty</h2>
+    <h3 class="atx" id="iterace-pres-klice-a-hodnoty">Iterace přes klíče a hodnoty</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> someDict <span
+            class="token operator">=</span> <span class="token punctuation">{</span> one<span
+            class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> two<span
+            class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> three<span
+            class="token operator">:</span> <span class="token number">3</span> <span class="token punctuation">}</span>
+
+<span class="token comment">// one 1</span>
+<span class="token comment">// two 2</span>
+<span class="token comment">// three 3</span>
+
+Object<span class="token punctuation">.</span><span class="token function">entries</span><span
+                class="token punctuation">(</span>someDict<span class="token punctuation">)</span><span
+                class="token punctuation">.</span><span class="token function">forEach</span><span
+                class="token punctuation">(</span><span class="token parameter">element</span> <span
+                class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token template-string"><span class="token template-punctuation string">`</span><span
+                class="token interpolation"><span
+                class="token interpolation-punctuation punctuation">${</span>element<span
+                class="token punctuation">[</span><span class="token number">0</span><span
+                class="token punctuation">]</span><span
+                class="token interpolation-punctuation punctuation">}</span></span><span
+                class="token string"> </span><span class="token interpolation"><span
+                class="token interpolation-punctuation punctuation">${</span>element<span
+                class="token punctuation">[</span><span class="token number">1</span><span
+                class="token punctuation">]</span><span
+                class="token interpolation-punctuation punctuation">}</span></span><span
+                class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="dotaz-na-vyskyt-klice-ve-slovniku">Dotaz na výskyt klíče ve slovníku</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> someDict <span
+            class="token operator">=</span> <span class="token punctuation">{</span> one<span
+            class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> two<span
+            class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> three<span
+            class="token operator">:</span> <span class="token number">3</span> <span class="token punctuation">}</span>
+
+<span class="token comment">// one is in the dict</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>someDict<span
+                class="token punctuation">.</span><span class="token function">hasOwnProperty</span><span
+                class="token punctuation">(</span><span class="token string">'one'</span><span
+                class="token punctuation">)</span><span class="token punctuation">)</span> <span
+                class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token string">'one is in the dict'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// four is not in the dict</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>someDict<span
+                class="token punctuation">.</span><span class="token function">hasOwnProperty</span><span
+                class="token punctuation">(</span><span class="token string">'four'</span><span
+                class="token punctuation">)</span><span class="token punctuation">)</span> <span
+                class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token string">'four is not in the dict'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre>
+    <h3 class="atx" id="pridani-noveho-paru-klichodnota-s-modifikaci">Přidání nového páru klíč:hodnota s modifikací</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> originalDict <span
+            class="token operator">=</span> <span class="token punctuation">{</span> one<span
+            class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> two<span
+            class="token operator">:</span> <span class="token number">2</span> <span class="token punctuation">}</span>
+originalDict<span class="token punctuation">.</span>three <span class="token operator">=</span> <span
+                class="token number">3</span>
+
+<span class="token comment">// one 1</span>
+<span class="token comment">// two 2</span>
+<span class="token comment">// three 3</span>
+Object<span class="token punctuation">.</span><span class="token function">entries</span><span
+                class="token punctuation">(</span>originalDict<span class="token punctuation">)</span><span
+                class="token punctuation">.</span><span class="token function">forEach</span><span
+                class="token punctuation">(</span><span class="token parameter">element</span> <span
+                class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token template-string"><span class="token template-punctuation string">`</span><span
+                class="token interpolation"><span
+                class="token interpolation-punctuation punctuation">${</span>element<span
+                class="token punctuation">[</span><span class="token number">0</span><span
+                class="token punctuation">]</span><span
+                class="token interpolation-punctuation punctuation">}</span></span><span
+                class="token string"> </span><span class="token interpolation"><span
+                class="token interpolation-punctuation punctuation">${</span>element<span
+                class="token punctuation">[</span><span class="token number">1</span><span
+                class="token punctuation">]</span><span
+                class="token interpolation-punctuation punctuation">}</span></span><span
+                class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="pridani-noveho-paru-klichodnota-bez-modifikace-puvodniho-slovniku">Přidání nového páru
+        klíč:hodnota bez modifikace původního slovníku</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> originalDict <span
+            class="token operator">=</span> <span class="token punctuation">{</span> one<span
+            class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> two<span
+            class="token operator">:</span> <span class="token number">2</span> <span class="token punctuation">}</span>
+<span class="token keyword">const</span> newDict <span class="token operator">=</span> <span
+                class="token punctuation">{</span> <span class="token operator">...</span>originalDict<span
+                class="token punctuation">,</span> three<span class="token operator">:</span> <span
+                class="token number">3</span> <span class="token punctuation">}</span>
+originalDict<span class="token punctuation">.</span>one <span class="token operator">=</span> <span
+                class="token number">100</span>
+
+<span class="token comment">// one 1</span>
+<span class="token comment">// two 2</span>
+<span class="token comment">// three 3</span>
+Object<span class="token punctuation">.</span><span class="token function">entries</span><span
+                class="token punctuation">(</span>newDict<span class="token punctuation">)</span><span
+                class="token punctuation">.</span><span class="token function">forEach</span><span
+                class="token punctuation">(</span><span class="token parameter">element</span> <span
+                class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token template-string"><span class="token template-punctuation string">`</span><span
+                class="token interpolation"><span
+                class="token interpolation-punctuation punctuation">${</span>element<span
+                class="token punctuation">[</span><span class="token number">0</span><span
+                class="token punctuation">]</span><span
+                class="token interpolation-punctuation punctuation">}</span></span><span
+                class="token string"> </span><span class="token interpolation"><span
+                class="token interpolation-punctuation punctuation">${</span>element<span
+                class="token punctuation">[</span><span class="token number">1</span><span
+                class="token punctuation">]</span><span
+                class="token interpolation-punctuation punctuation">}</span></span><span
+                class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="iterace-pres-klice">Iterace přes klíče</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> someDict <span
+            class="token operator">=</span> <span class="token punctuation">{</span> one<span
+            class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> two<span
+            class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> three<span
+            class="token operator">:</span> <span class="token number">3</span> <span class="token punctuation">}</span>
+
+<span class="token comment">// one</span>
+<span class="token comment">// two</span>
+<span class="token comment">// three</span>
+Object<span class="token punctuation">.</span><span class="token function">keys</span><span
+                class="token punctuation">(</span>someDict<span class="token punctuation">)</span><span
+                class="token punctuation">.</span><span class="token function">forEach</span><span
+                class="token punctuation">(</span><span class="token parameter">element</span> <span
+                class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>element<span
+                class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="iterace-pres-hodnoty">Iterace přes hodnoty</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> someDict <span
+            class="token operator">=</span> <span class="token punctuation">{</span> one<span
+            class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> two<span
+            class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> three<span
+            class="token operator">:</span> <span class="token number">3</span> <span class="token punctuation">}</span>
+
+<span class="token comment">// 1</span>
+<span class="token comment">// 2</span>
+<span class="token comment">// 3</span>
+Object<span class="token punctuation">.</span><span class="token function">values</span><span class="token punctuation">(</span>someDict<span
+                class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forEach</span><span
+                class="token punctuation">(</span><span class="token parameter">element</span> <span
+                class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>element<span
+                class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="odstraneni-paru-klichodnota">Odstranění páru klíč:hodnota</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> someDict <span
+            class="token operator">=</span> <span class="token punctuation">{</span> one<span
+            class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> two<span
+            class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> three<span
+            class="token operator">:</span> <span class="token number">3</span> <span class="token punctuation">}</span>
+
+<span class="token keyword">delete</span> someDict<span class="token punctuation">.</span>two
+
+Object<span class="token punctuation">.</span><span class="token function">entries</span><span
+                class="token punctuation">(</span>someDict<span class="token punctuation">)</span><span
+                class="token punctuation">.</span><span class="token function">forEach</span><span
+                class="token punctuation">(</span><span class="token parameter">element</span> <span
+                class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token template-string"><span class="token template-punctuation string">`</span><span
+                class="token interpolation"><span
+                class="token interpolation-punctuation punctuation">${</span>element<span
+                class="token punctuation">[</span><span class="token number">0</span><span
+                class="token punctuation">]</span><span
+                class="token interpolation-punctuation punctuation">}</span></span><span
+                class="token string"> </span><span class="token interpolation"><span
+                class="token interpolation-punctuation punctuation">${</span>element<span
+                class="token punctuation">[</span><span class="token number">1</span><span
+                class="token punctuation">]</span><span
+                class="token interpolation-punctuation punctuation">}</span></span><span
+                class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="ziskani-hodnoty-na-zaklade-klice-a-v-pripade-ze-neexistuje-tak-defaultni-hodnoty">Získání
+        hodnoty na základě klíče a v případě, že neexistuje tak defaultní hodnoty</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> someDict <span
+            class="token operator">=</span> <span class="token punctuation">{</span> one<span
+            class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> two<span
+            class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> three<span
+            class="token operator">:</span> <span class="token number">3</span> <span class="token punctuation">}</span>
+
+<span class="token comment">// Doesn't exist</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span
+                class="token punctuation">(</span>someDict<span class="token punctuation">.</span>five <span
+                class="token operator">||</span> <span class="token string">"Doesn't exist"</span><span
+                class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="kopie-slovniku">Kopie slovníku</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> originalDict <span
+            class="token operator">=</span> <span class="token punctuation">{</span> one<span
+            class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> two<span
+            class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> three<span
+            class="token operator">:</span> <span class="token number">3</span> <span class="token punctuation">}</span>
+<span class="token keyword">const</span> newDict <span class="token operator">=</span> <span
+                class="token punctuation">{</span> <span class="token operator">...</span>originalDict <span
+                class="token punctuation">}</span>
+originalDict<span class="token punctuation">.</span>one <span class="token operator">=</span> <span
+                class="token number">100</span>
+
+<span class="token comment">// one 1</span>
+<span class="token comment">// two 2</span>
+<span class="token comment">// three 3</span>
+Object<span class="token punctuation">.</span><span class="token function">entries</span><span
+                class="token punctuation">(</span>newDict<span class="token punctuation">)</span><span
+                class="token punctuation">.</span><span class="token function">forEach</span><span
+                class="token punctuation">(</span><span class="token parameter">element</span> <span
+                class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token template-string"><span class="token template-punctuation string">`</span><span
+                class="token interpolation"><span
+                class="token interpolation-punctuation punctuation">${</span>element<span
+                class="token punctuation">[</span><span class="token number">0</span><span
+                class="token punctuation">]</span><span
+                class="token interpolation-punctuation punctuation">}</span></span><span
+                class="token string"> </span><span class="token interpolation"><span
+                class="token interpolation-punctuation punctuation">${</span>element<span
+                class="token punctuation">[</span><span class="token number">1</span><span
+                class="token punctuation">]</span><span
+                class="token interpolation-punctuation punctuation">}</span></span><span
+                class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="transformace-slovnikuobjektu-na-json-string">Transformace slovníku/objektu na JSON string</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> someDict <span
+            class="token operator">=</span> <span class="token punctuation">{</span> one<span
+            class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> two<span
+            class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> three<span
+            class="token operator">:</span> <span class="token number">3</span> <span class="token punctuation">}</span>
+
+<span class="token comment">// {</span>
+<span class="token comment">//   "one": 1,</span>
+<span class="token comment">//   "two": 2,</span>
+<span class="token comment">//   "three": 3</span>
+<span class="token comment">// }</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span
+                class="token punctuation">(</span><span class="token constant">JSON</span><span
+                class="token punctuation">.</span><span class="token function">stringify</span><span
+                class="token punctuation">(</span>someDict<span class="token punctuation">,</span> <span
+                class="token keyword">null</span><span class="token punctuation">,</span> <span
+                class="token number">2</span><span class="token punctuation">)</span><span
+                class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="transformace-json-strigu-na-objekt">Transformace JSON strigu na objekt</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> someJson <span
+            class="token operator">=</span> <span class="token template-string"><span
+            class="token template-punctuation string">`</span><span class="token string">{
+  "one": 1,
+  "two": 2,
+  "three": 3
+}</span><span class="token template-punctuation string">`</span></span>
+
+<span class="token keyword">const</span> dictFromJson <span class="token operator">=</span> <span
+                class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span
+                class="token punctuation">(</span>someJson<span class="token punctuation">)</span>
+
+<span class="token comment">// 2</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span
+                class="token punctuation">(</span>dictFromJson<span class="token punctuation">.</span>two<span
+                class="token punctuation">)</span></code></pre>
+    <h2 class="atx" id="funkce">Funkce</h2>
+    <h3 class="atx" id="definice">Definice</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> <span
+            class="token function-variable function">add</span> <span class="token operator">=</span> <span
+            class="token punctuation">(</span><span class="token parameter">x<span class="token punctuation">,</span> y</span><span
+            class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span
+            class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token template-string"><span class="token template-punctuation string">`</span><span
+                class="token string">Adding </span><span class="token interpolation"><span
+                class="token interpolation-punctuation punctuation">${</span>x<span
+                class="token interpolation-punctuation punctuation">}</span></span><span
+                class="token string"> and </span><span class="token interpolation"><span
+                class="token interpolation-punctuation punctuation">${</span>y<span
+                class="token interpolation-punctuation punctuation">}</span></span><span
+                class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+  <span class="token keyword">return</span> x <span class="token operator">+</span> y
+<span class="token punctuation">}</span>
+<span class="token comment">// Adding 1 and 2</span>
+<span class="token comment">// 3</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span
+                class="token punctuation">(</span><span class="token function">add</span><span
+                class="token punctuation">(</span><span class="token number">1</span><span
+                class="token punctuation">,</span> <span class="token number">2</span><span
+                class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="argument-s-vychozi-hodnotou">Argument s výchozí hodnotou</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> greet <span
+            class="token operator">=</span> <span class="token punctuation">(</span>name<span class="token punctuation">,</span> word <span
+            class="token operator">=</span> <span class="token string">'Hello'</span><span
+            class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span
+            class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span
+                class="token template-string"><span class="token template-punctuation string">`</span><span
+                class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>word<span
+                class="token interpolation-punctuation punctuation">}</span></span><span
+                class="token string"> </span><span class="token interpolation"><span
+                class="token interpolation-punctuation punctuation">${</span>name<span
+                class="token interpolation-punctuation punctuation">}</span></span><span
+                class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Hello World</span>
+<span class="token function">greet</span><span class="token punctuation">(</span><span
+                class="token string">'World'</span><span class="token punctuation">)</span>
+
+<span class="token comment">// Goodbye World</span>
+<span class="token function">greet</span><span class="token punctuation">(</span><span
+                class="token string">'World'</span><span class="token punctuation">,</span> <span class="token string">'Goodbye'</span><span
+                class="token punctuation">)</span></code></pre>
+    <h3 class="atx" id="promenlivy-pocet-argumentu">Proměnlivý počet argumentů</h3>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> <span
+            class="token function-variable function">positionalArgs</span> <span class="token operator">=</span> <span
+            class="token punctuation">(</span><span class="token parameter">a<span
+            class="token punctuation">,</span> b<span class="token punctuation">,</span> <span class="token operator">...</span>args</span><span
+            class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span
+            class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span
+                class="token punctuation">)</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>b<span
+                class="token punctuation">)</span>
+  args<span class="token punctuation">.</span><span class="token function">forEach</span><span
+                class="token punctuation">(</span><span class="token parameter">element</span> <span
+                class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span
+                class="token punctuation">(</span>element<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 1</span>
+<span class="token comment">// 2</span>
+<span class="token comment">// 3</span>
+<span class="token comment">// 4</span>
+<span class="token function">positionalArgs</span><span class="token punctuation">(</span><span
+                class="token number">1</span><span class="token punctuation">,</span> <span
+                class="token number">2</span><span class="token punctuation">,</span> <span
+                class="token number">3</span><span class="token punctuation">,</span> <span
+                class="token number">4</span><span class="token punctuation">)</span></code></pre>
+    <h2 class="atx" id="tridy">Třídy</h2>
+    <pre><code class="fenced-code-block language-js"><span class="token keyword">class</span> <span
+            class="token class-name">Duck</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">name</span><span
+                class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span
+                class="token operator">=</span> name
+  <span class="token punctuation">}</span>
+
+  <span class="token function">fly</span><span class="token punctuation">(</span><span
+                class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span
+                class="token punctuation">(</span><span class="token template-string"><span
+                class="token template-punctuation string">`</span><span class="token interpolation"><span
+                class="token interpolation-punctuation punctuation">${</span><span
+                class="token keyword">this</span><span class="token punctuation">.</span>name<span
+                class="token interpolation-punctuation punctuation">}</span></span><span
+                class="token string"> can fly</span><span class="token template-punctuation string">`</span></span><span
+                class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// not static: call a method on an instance</span>
+  <span class="token comment">// const duck = new Duck(...)</span>
+  <span class="token comment">// duck.create(...)</span>
+  <span class="token comment">//</span>
+  <span class="token comment">// static: call a method on a class</span>
+  <span class="token comment">// Duck.create(...)</span>
+  <span class="token keyword">static</span> <span class="token function">create</span><span
+                class="token punctuation">(</span><span class="token parameter">name<span
+                class="token punctuation">,</span> kind</span><span class="token punctuation">)</span> <span
+                class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>kind <span
+                class="token operator">===</span> <span class="token string">'mallard'</span><span
+                class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">MallardDuck</span><span
+                class="token punctuation">(</span>name<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span
+                class="token keyword">if</span> <span class="token punctuation">(</span>kind <span
+                class="token operator">===</span> <span class="token string">'rubber'</span><span
+                class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">RubberDuck</span><span
+                class="token punctuation">(</span>name<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span
+                class="token punctuation">{</span>
+      <span class="token comment">// this = Duck</span>
+      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">this</span><span
+                class="token punctuation">(</span>name<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">MallardDuck</span> <span class="token keyword">extends</span> <span
+                class="token class-name">Duck</span> <span class="token punctuation">{</span>
+  <span class="token comment">// get:</span>
+  <span class="token comment">// use duck.color instead of duck.color()</span>
+  <span class="token keyword">get</span> <span class="token function">color</span><span
+                class="token punctuation">(</span><span class="token punctuation">)</span> <span
+                class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token string">'green'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">RubberDuck</span> <span class="token keyword">extends</span> <span
+                class="token class-name">Duck</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>name<span
+                class="token punctuation">,</span> eyeColor <span class="token operator">=</span> <span
+                class="token string">'black'</span><span class="token punctuation">)</span> <span
+                class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>eyeColor <span
+                class="token operator">=</span> eyeColor
+  <span class="token punctuation">}</span>
+
+  <span class="token function">fly</span><span class="token punctuation">(</span><span
+                class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">.</span><span
+                class="token function">fly</span><span class="token punctuation">(</span><span
+                class="token punctuation">)</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span
+                class="token punctuation">(</span><span class="token template-string"><span
+                class="token template-punctuation string">`</span><span class="token string">Just kidding, </span><span
+                class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span
+                class="token keyword">this</span><span class="token punctuation">.</span>name<span
+                class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> cannot fly</span><span
+                class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">get</span> <span class="token function">color</span><span
+                class="token punctuation">(</span><span class="token punctuation">)</span> <span
+                class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token string">'yellow'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> regularDuck <span class="token operator">=</span> <span class="token keyword">new</span> <span
+                class="token class-name">Duck</span><span class="token punctuation">(</span><span class="token string">'reggie'</span><span
+                class="token punctuation">)</span>
+<span class="token comment">// reggie can fly</span>
+regularDuck<span class="token punctuation">.</span><span class="token function">fly</span><span
+                class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> mallardDuck <span class="token operator">=</span> Duck<span
+                class="token punctuation">.</span><span class="token function">create</span><span
+                class="token punctuation">(</span><span class="token string">'mal'</span><span
+                class="token punctuation">,</span> <span class="token string">'mallard'</span><span
+                class="token punctuation">)</span>
+<span class="token comment">// mal</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span
+                class="token punctuation">(</span>mallardDuck<span class="token punctuation">.</span>name<span
+                class="token punctuation">)</span>
+<span class="token comment">// green</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span
+                class="token punctuation">(</span>mallardDuck<span class="token punctuation">.</span>color<span
+                class="token punctuation">)</span>
+
+rubberDuck <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">RubberDuck</span><span
+                class="token punctuation">(</span><span class="token string">'vic'</span><span
+                class="token punctuation">,</span> <span class="token string">'blue'</span><span
+                class="token punctuation">)</span>
+<span class="token comment">// vic can fly</span>
+<span class="token comment">// Just kidding, vic cannot fly</span>
+rubberDuck<span class="token punctuation">.</span><span class="token function">fly</span><span
+                class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">// yellow</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span
+                class="token punctuation">(</span>rubberDuck<span class="token punctuation">.</span>color<span
+                class="token punctuation">)</span>
+
+<span class="token comment">// blue</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span
+                class="token punctuation">(</span>rubberDuck<span class="token punctuation">.</span>eyeColor<span
+                class="token punctuation">)</span></code></pre>
+</article>
+</body>
+</html>
